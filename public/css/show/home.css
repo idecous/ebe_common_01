@@ -1,0 +1,719 @@
+.common_mainNavBar{
+    top: 150px;
+}
+.top_logoBlockHolder{
+    height: 70px;
+    display: none;
+}
+ .top_switchPlaceholder{
+    width: 100%;
+    height: auto;
+}
+ .topSwitchViewBlock{
+    position: absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+ .topSwitchViewBlock ul{
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+ .topSwitchViewBlock ul li{
+    position:relative;
+    float: left;
+}
+ .topSwitchViewBlock ul li img{
+    width: 100%;
+}
+
+ .topSwitchViewBlock ul li a{
+    position:absolute;
+    top: 45%;
+    left: 10%;
+    display: block;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    color: #fff;
+}
+ .topSwitchViewBlock ul li a h1{
+    font-size: 60px;
+}
+ .topSwitchViewBlock ul li a .separator {
+    height: 0;
+    width: 130px;
+    border-top: 1px solid #fff;
+    display:inline-block;
+    vertical-align:top;
+}
+ .topSwitchViewBlock ul li a h3{
+    font-size: 18px;
+}
+ .topSwitchViewBlock ul li a .button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    margin-top:50px;
+}
+
+ .switchNavPanel{
+    position:absolute;
+    left:0;
+    bottom: -14px;
+    width:100%;
+    height: 4px;
+    text-align: center;
+    line-height: 4px;
+}
+ .switchNavPanel a{
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    background-color: #676665;
+    margin-left: 10px;
+}
+ .switchNavPanel a:first-child{
+    margin-left: 0;
+}
+ .switchNavPanel .selected{
+    background-color: #fff;
+}
+ .top_logoBlock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+ .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+
+
+.common_mainPanel .subTitlePanel{
+    min-height: 67px;
+    text-align: center;
+    color: #eee;
+    border-bottom: 1px solid #333;
+    padding-top: 63px;
+    clear: both;
+}
+.common_mainPanel .subTitlePanel h1{
+    font-size: 28px;
+    text-transform :uppercase;
+}
+.common_mainPanel .subTitlePanel span{
+    font-size: 18px;
+}
+
+.common_mainPanel .actMainBlock {
+    position:relative;
+    margin-top: 12px;
+}
+.common_mainPanel .actMainBlock .placeholder1{
+    width: 100%;
+}
+.common_mainPanel .actMainBlock .placeholder2{
+    width: 100%;
+    display: none;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 66.53%;
+    height: 100%;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    opacity: 0;
+    z-index:0;
+    transition: all 1s ease-out 0s;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul .selected{
+    opacity: 1;
+    z-index: 5;
+}
+
+.common_mainPanel .actMainBlock .detailsViewBorder ul li img{
+    width: 100%;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li:hover .mask{
+    background-color: rgba(0,0,0,0.5);
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock{
+    position: absolute;
+    width: 650px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: -120px;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+    transition: all 0.25s ease-out 0s;
+    opacity: 1;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li:hover .textBlock{
+    opacity: 1;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock .separator{
+    display:inline-block;
+    width: 325px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock h2{
+    font-size: 22px;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock p{
+    line-height: 24px;
+    margin-top: 28px;
+}
+.common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock a{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-72px;
+    display: inline-block;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #fff;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+}
+.common_mainPanel .actMainBlock .navGroupBorder{
+    position:absolute;
+    top:0;
+    right:0;
+    width: 33.47%;
+    height: 100%;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul{
+    width: 100%;
+    height: 100%;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li{
+    position:relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li .container{
+    position: absolute;
+    left: 3px;
+    right: 0;
+    top: 0;
+    bottom: 2px;
+    cursor: default;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li:nth-child(n+4) .container{
+    top: 1px;
+    bottom: 1px;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li:nth-child(n+7) .container{
+    top: 2px;
+    bottom: 0px;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li .container img{
+    width: 100%;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li .container .descriptBlock{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width:100%;
+    height: 24px;
+    line-height: 24px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .actMainBlock .navGroupBorder ul li .container .descriptBlock div{
+    margin: 0 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.common_mainPanel .actMainBlock .navGroupBorder ul .selected .container .descriptBlock{
+    background-color: rgba(0,0,0,1);
+    height: 34px;
+    line-height: 34px;
+}
+
+.common_mainPanel .seriesMainBlock{
+    margin-top: 20px;
+}
+
+.common_mainPanel .seriesMainBlock .leftGroup{
+    width: 33.46%;
+    float: left;
+}
+.common_mainPanel .seriesMainBlock .leftGroup .border{
+    margin: 0 2px 0 4px;
+    position: relative;
+    display: block;
+}
+.common_mainPanel .seriesMainBlock img{
+    width: 100%;
+}
+.common_mainPanel .seriesMainBlock .rightGroup{
+    width: 66.54%;
+    float: left;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder{
+    margin-right: 4px;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .topGroup{
+    position: relative;
+    display: block;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup{
+    margin-top: 1px;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left{
+    width: 50%;
+    float: left;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left .border{
+    margin-right: 1px;
+    position: relative;
+    display: block;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right{
+    width: 50%;
+    float: right;
+}
+.common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right .border{
+    margin-left: 1px;
+    position: relative;
+    display: block;
+}
+.common_mainPanel .seriesBottom{
+    clear: both;
+    height: 30px;
+}
+
+.siteMessage{
+    height: 215px;
+}
+.siteMessage .siteInfoBlock {
+    position:absolute;
+    top:0;
+    left: 4px;
+    right:4px;
+    height: 215px;
+}
+.siteMessage .siteInfoBlock .border{
+    border: 1px solid #333;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.siteMessage .siteInfoBlock .descriptBlock{
+    height: 215px;
+    width: 66.66%;
+    float: left;
+}
+.siteMessage .siteInfoBlock .descriptBlock .border{
+    border-right:none;
+    height:175px;
+    padding: 20px 240px 20px 75px;
+}
+.siteMessage .siteInfoBlock .descriptBlock h4{
+    font-size: 16px;
+}
+.siteMessage .siteInfoBlock .descriptBlock h4 span{
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+.siteMessage .siteInfoBlock .descriptBlock h1 {
+    font-size: 30px;
+    margin-top: 2px;
+}
+.siteMessage .siteInfoBlock .descriptBlock h1 .pink{
+    color: #ff9999;
+    margin-left: 10px;
+}
+.siteMessage .siteInfoBlock .descriptBlock h3 {
+    font-size: 16px;
+}
+.siteMessage .siteInfoBlock .descriptBlock p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 11px;
+    line-height: 22px;
+}
+.siteMessage .siteInfoBlock .addressBlock{
+    height: 215px;
+    width: 33.34%;
+    float: left;
+}
+.siteMessage .siteInfoBlock .addressBlock img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+}
+.siteMessage .siteInfoBlock .addressBlock .infoBlock{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30px;
+    margin-left:-130px;
+    width: 260px;
+    height: 60px;
+}
+.siteMessage .siteInfoBlock .addressBlock .infoBlock i{
+    display:block;
+    float: left;
+    display: block;
+    width: 44px;
+    height: 54px;
+    background: url(../../img/show/foot_address_point.png);
+}
+.siteMessage .siteInfoBlock .addressBlock .infoBlock .textBlock{
+    float: left;
+    width: 210px;
+    margin-left: 5px;
+}
+.siteMessage .siteInfoBlock .addressBlock .infoBlock .textBlock h1{
+    color: #ff9999;
+    font-size: 18px;
+}
+.siteMessage .siteInfoBlock .addressBlock .infoBlock .textBlock p{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+@media \0screen {
+    .top_logoBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .mask{
+        background:url(../1pAlpha.png);
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li:hover .mask{
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock a{
+        background:url(../1pAlpha.png);
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder ul li .container .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder ul .selected .container .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF000000, endColorstr=#FF000000);
+    }
+}
+@media only screen and (min-width: 785px) and (max-width: 1440px) {
+    .siteMessage .siteInfoBlock .descriptBlock .border{
+        padding: 20px 15px;
+    }
+}
+
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+     .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+     .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+    .common_mainNavBar{
+        position: relative;
+        top: auto;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder{
+        position: relative;
+        width: auto;
+        height:auto;
+        margin: 0 10px;
+    }
+    .common_mainPanel .actMainBlock .placeholder1{
+        display: none;
+    }
+    .common_mainPanel .actMainBlock .placeholder2 {
+        display: block;
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder{
+        position: static;
+        width: auto;
+        height:auto;
+        margin: 4px 10px 0 6px;
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder ul{
+        height: auto;
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder ul li {
+        width: 25%;
+        position: static;
+    }
+    .common_mainPanel .actMainBlock .navGroupBorder ul li .container{
+        position: relative;
+        margin-left: 4px;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+    }
+    .common_mainPanel .seriesMainBlock .leftGroup {
+        width: 50.5%;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup{
+        width: 49.5%;
+    }
+    .common_mainPanel .seriesMainBlock .leftGroup .border{
+        margin: 0 10px 0 10px;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder{
+        margin-right: 10px;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .topGroup {
+        display: none;
+    }
+
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup{
+        margin-top: 0;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left{
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right{
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left .border,
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right .border{
+        margin: 0;
+    }
+
+    .siteMessage{
+        height: 255px;
+    }
+    .siteMessage .siteInfoBlock {
+        left: 10px;
+        right:10px;
+        height: 255px;
+    }
+    .siteMessage .siteInfoBlock .descriptBlock .border{
+        border: 1px solid #333;
+        margin-right: 10px;
+    }
+    .siteMessage .siteInfoBlock .descriptBlock{
+        height: 235px;
+    }
+    .siteMessage .siteInfoBlock .descriptBlock .border{
+        height: 195px;
+    }
+    .siteMessage .siteInfoBlock .addressBlock .infoBlock{
+        width: 200px;
+        margin-left:-100px;
+        margin-top: -40px;
+    }
+    .siteMessage .siteInfoBlock .descriptBlock p {
+        margin-top: 5px;
+    }
+    .siteMessage .siteInfoBlock .addressBlock {
+        height: 235px;
+    }
+    .siteMessage .siteInfoBlock .addressBlock .infoBlock i{
+        margin-top: 10px;
+    }
+    .siteMessage .siteInfoBlock .addressBlock .infoBlock .textBlock{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+     .top_logoBlockHolder{
+        display: block;
+     }
+     .top_logoBlock{
+        position:fixed;
+        left:auto;
+        background-color:#000;
+        height:40px;
+        text-align: center;
+        line-height: 34px;
+        border-bottom: 1px solid #999;
+    }
+    .top_logoBlock img{
+        margin-left: 60px;
+        width: 164px;
+        height: 26px;
+    }
+     .topSwitchViewBlock ul li a {
+        height: 45px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        left: 0;
+        top: auto;
+        bottom: 0;
+        text-align: left;
+    }
+     .topSwitchViewBlock ul li a h1{
+        font-size: 18px;
+        border-bottom: 1px solid #fff;
+        margin-left: 20px;
+        display: inline-block;
+    }
+     .topSwitchViewBlock ul li a .separator {
+        display: none;
+    }
+     .topSwitchViewBlock ul li a h3 {
+        margin-top: 2px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+     .topSwitchViewBlock ul li a .button {
+        display: none;
+    }
+    .common_mainPanel .actMainBlock .placeholder1,
+    .common_mainPanel .actMainBlock .placeholder2,
+    .common_mainPanel .actMainBlock .navGroupBorder,
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .mask {
+        display: none;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul{
+        position: static;
+        width: auto;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li{
+        position:relative;
+        float: none;
+        margin-bottom: 4px;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock{
+        display: block;
+        left:auto;
+        margin: 0;
+        top:auto;
+        bottom: 10px;
+        right:0;
+        width: 80%;
+        height:60px;
+        background-color: rgba(0,0,0,0.7);
+        text-align: left;
+        white-space: nowrap;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock h1{
+        font-size: 14px;
+        padding-left: 15px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock h2 {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock .separator,
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock p,
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock a span{
+        display: none;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li .textBlock a{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+    }
+    .common_mainPanel .actMainBlock .detailsViewBorder ul li{
+        opacity: 1;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .topGroup {
+        display: none;
+    }
+    .common_mainPanel .seriesMainBlock .leftGroup {
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .seriesMainBlock .leftGroup {
+        text-align: center;
+    }
+    .common_mainPanel .seriesMainBlock .leftGroup .border{
+        margin: 0 0 4px 0;
+        max-width: 496px;
+        display: inline-block;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup{
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left,
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right {
+        width: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder{
+        margin-right:0;
+    }
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .left .border,
+    .common_mainPanel .seriesMainBlock .rightGroup .outerBorder .bottomGroup .right .border{
+        margin:0 0 4px 0;
+        max-width: 496px;
+        display: inline-block;
+    }
+    .header .top_logoBlock h1,
+    .siteMessage{
+        display: none;
+    }
+}

@@ -1,0 +1,125 @@
+.common_mainNavBar{
+    position: relative;
+}
+.header{
+    background-color: #fff;
+}
+.header .top_logoBlockHolder{
+    height: 40px;
+    display: none;
+}
+.header .common_centerBlock{
+    width: 1200px;
+}
+.header .top_logoBlock{
+    height:150px;
+    text-align: center;
+    background:#7f7f7f;
+    line-height: 107px;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+.header .switchNavBg{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height: 30px;
+    line-height:30px;
+    text-align: right;
+    background:rgba(0,0,0,0.5);
+}
+.header .switchNavBg a{
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.header .switchNavBg a i{
+    width: 5px;
+    height: 7px;
+    display: inline-block;
+    background: url(../../img/show/icons.png) no-repeat 0 -226px;
+    margin-right: 4px;
+    vertical-align: 1px;
+}
+.common_mainPanel {
+    text-align: center;
+}
+.common_mainPanel .subNavBar{
+    width: 100%;
+    max-width: 1200px;
+    color: #666;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 50px;
+}
+.common_mainPanel .suitBlock{
+    width:100%;
+    max-width:980px;
+    display:inline-block;
+    margin-top: 50px;
+}
+.common_mainPanel .suitBlock img{
+    width: 100%;
+}
+.bottomSpace{
+    height: 120px;
+}
+@media \0screen {
+    .header .switchNavBg{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .header .common_centerBlock{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+    .header .top_logoBlock{
+        height: 100px;
+        line-height: 78px;
+    }
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        top:0;
+        width: 100%;
+        height: 40px;
+        line-height:40px;
+        text-align: center;
+        border-bottom: 1px solid #999;
+        background-color: #000;
+        z-index: 150;
+    }
+    .header .top_logoBlock img{
+        display: none;
+    }
+    .header .top_logoBlock h1{
+        display: inline-block;
+        margin-left: 47px;
+    }
+    .common_mainPanel .subNavBar{
+        display: none;
+    }
+    .common_mainPanel .suitBlock{
+        margin-top: 30px;
+    }
+}

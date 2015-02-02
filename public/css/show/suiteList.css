@@ -1,0 +1,121 @@
+.common_mainNavBar{
+    position: relative;
+}
+.header .top_logoBlockHolder{
+    height: 70px;
+    display: none;
+}
+.header .top_logoBlock{
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+
+.common_mainPanel .listBlock{
+    margin: 30px 0 0 20px;
+}
+.common_mainPanel .listBlock li{
+    position:relative;
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+}
+.common_mainPanel .listBlock li a{
+    position: relative;
+    display: block;
+    margin-right: 19px;
+}
+.common_mainPanel .listBlock li a img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.common_mainPanel .listBlock li a .bg{
+    position: static;
+}
+
+
+.common_mainPanel .loadingRow{
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+}
+
+.bottomSpace{
+    height: 120px;
+}
+
+@media \0screen {
+    .header .top_logoBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+
+}
+@media only screen and (min-width: 784px) and (max-width: 1150px) {
+    .common_mainPanel .listBlock li {
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+    .header .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 785px) {
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        height:40px;
+        top:0;
+        width:100%;
+        text-align: center;
+        line-height: 34px;
+        border-bottom: 1px solid #999;
+    }
+    .header .top_logoBlock img{
+        margin-left: 60px;
+        width: 164px;
+        height: 26px;
+    }
+    .common_mainPanel .listBlock {
+        margin: 20px 0;
+    }
+    .common_mainPanel .listBlock li {
+        float: none;
+        margin-bottom: 5px;
+        width: auto;
+        text-align: center;
+    }
+    .common_mainPanel .listBlock li a{
+        display: inline-block;
+        margin: 0;
+        max-width: 351px;
+    }
+
+}

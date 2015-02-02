@@ -1,0 +1,494 @@
+
+.common_rightPanel .messagePanel{
+    border-top:  2px solid #666;
+    height: 175px;
+}
+.common_rightPanel .messagePanel li{
+    float: left;
+    position: relative;
+    height: 115px;
+    margin-top: 30px;
+}
+.common_rightPanel .messagePanel li .separator{
+    position: absolute;
+    height: 115px;
+    border-right:1px solid #ddd;
+    top: 50%;
+    right: 0;
+    margin-top: -57px;
+}
+.common_rightPanel .messagePanel .userCol{
+    width: 40.2%;
+    text-align: center;
+}
+.common_rightPanel .messagePanel .userCol .info{
+    display: inline-block;
+    width: 120px;
+    margin-left: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+.common_rightPanel .messagePanel .userCol .welcome{
+    color: #666;
+}
+.common_rightPanel .messagePanel .userCol .welcome b{
+    font-weight: normal;
+    color: #333;
+}
+.common_rightPanel .messagePanel .userCol .level{
+    display: block;
+    width: 74px;
+    height: 14px;
+    background: url(../../../img/customer/icons.png);
+    margin: 10px 0;
+}
+.common_rightPanel .messagePanel .userCol .lv1{
+    background-position: 0 -42px;
+}
+.common_rightPanel .messagePanel .userCol .lv2{
+    background-position: 0 -56px;
+}
+.common_rightPanel .messagePanel .userCol .lv3{
+    background-position: 0 -70px;
+}
+.common_rightPanel .messagePanel .accountCol{
+    width: 36.6%;
+    font-size: 12px;
+}
+.common_rightPanel .messagePanel .accountCol .info{
+    text-align: left;
+    margin: 0 auto;
+    width: 150px;
+}
+.common_rightPanel .messagePanel .accountCol h3{
+    font-size: 14px;
+}
+.common_rightPanel .messagePanel .accountCol .indicator{
+    margin: 5px 0;
+}
+.common_rightPanel .messagePanel .accountCol .indicator i{
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #ddd;
+    margin-left: 3px;
+}
+.common_rightPanel .messagePanel .accountCol .indicator i:first-child{
+    margin-left: 0;
+}
+.common_rightPanel .messagePanel .accountCol .indicator .ok{
+    background-color: #df4141;
+}
+.common_rightPanel .messagePanel .accountCol .modify{
+    text-decoration: underline;
+}
+.common_rightPanel .messagePanel .accountCol .phone{
+    margin-top: 15px;
+    color: #666;
+}
+.common_rightPanel .messagePanel .accountCol .phone i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../../img/customer/icons.png) no-repeat -42px 0;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+.common_rightPanel .messagePanel .accountCol .email{
+    margin-top: 5px;
+    color: #666;
+}
+.common_rightPanel .messagePanel .accountCol .email i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../../img/customer/icons.png) no-repeat -42px -16px;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+.common_rightPanel .messagePanel .accountCol .phone a,
+.common_rightPanel .messagePanel .accountCol .email a{
+    color: #333;
+    margin-left: 10px;
+}
+.common_rightPanel .messagePanel .otherCol{
+    width: 23.2%;
+}
+.common_rightPanel .messagePanel .otherCol .info{
+    text-align: left;
+    margin: 0 auto;
+    width: 100px;
+    font-size: 12px;
+}
+.common_rightPanel .messagePanel .otherCol .info h3{
+    font-size: 14px;
+}
+.common_rightPanel .messagePanel .otherCol .info>div{
+    line-height: 32px;
+    color: #666;
+}
+.common_rightPanel .messagePanel .otherCol .info b{
+    font-weight: normal;
+    color: #df4141;
+    margin-left: 4px;
+}
+.common_rightPanel .messagePanel .otherCol .info .first{
+    margin-top: 5px;
+}
+
+.common_rightPanel .orderTypeBar{
+    border-bottom: 2px solid #ddd;
+    line-height: 32px;
+}
+.common_rightPanel .orderTypeBar a{
+    display: inline-block;
+    width: 155px;
+    text-align: center;
+    color: #666;
+}
+.common_rightPanel .orderTypeBar .current{
+    position:relative;
+    color: 	#333;
+    border-bottom: 2px solid #333;
+    margin-bottom: -2px;
+}
+.common_rightPanel table{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-collapse:collapse;
+}
+.common_rightPanel table thead tr{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+}
+.common_rightPanel table tbody td{
+    text-align: center;
+    padding: 10px 2px;
+    line-height: 26px;
+    font-size: 12px;
+}
+.common_rightPanel table tbody td a{
+    text-decoration: underline;
+}
+.common_rightPanel table tbody td a:hover{
+    color: #df4141;
+}
+.common_rightPanel .pageBar{
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height:24px;
+    color: #666;
+}
+.common_rightPanel .pageBar a{
+    display: inline-block;
+    border: 1px solid #ccc;
+    color: #666;
+    width: 70px;
+    height: 24px;
+    text-align: center;
+    margin-right: 10px;
+}
+.common_rightPanel .pageBar a:hover{
+    color: #fff;
+    background-color: #333;
+}
+.common_rightPanel .pageBar a i{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background: url("../../../img/customer/icons.png");
+}
+.common_rightPanel .pageBar .pre i{
+    background-position: -58px -9px;
+    margin-right: 6px;
+}
+.common_rightPanel .pageBar .next i{
+    background-position: -58px 0;
+    margin-left: 6px;
+}
+.common_rightPanel .pageBar input{
+    display: inline-block;
+}
+.common_rightPanel .pageBar input[type="text"]{
+    width: 38px;
+    height: 24px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0 4px;
+}
+.common_rightPanel .pageBar input[type="submit"]{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #666;
+}
+.common_rightPanel .pageBar input[type="submit"]:hover{
+    color: #fff;
+    background-color: #333;
+}
+.common_rightPanel .shortcutBar{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    line-height: 32px;
+}
+.common_rightPanel .shortcutBar a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #666;
+}
+.common_rightPanel .shortcutBar .current{
+    position:relative;
+    color: 	#333;
+    border-bottom: 2px solid #333;
+    margin-bottom: -2px;
+    font-weight: bold;
+}
+.common_rightPanel .moduleGroup{
+    visibility: hidden;
+}
+.common_rightPanel .moduleGroup .module{
+    display: none;
+    text-align: justify;
+}
+.common_rightPanel .moduleGroup .current{
+    display: block;
+}
+
+.common_rightPanel .moduleGroup .module .item{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 32.3%;
+    max-width: 265px;
+}
+.common_rightPanel .moduleGroup .module .item img{
+    width: 100%;
+}
+
+.common_rightPanel .moduleGroup .module .item .descriptBlock{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.common_rightPanel .moduleGroup .module .item .descriptBlock a{
+    color: #fff;
+}
+
+.common_rightPanel .moduleGroup .activity .item .descriptBlock{
+    height: 60px;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+}
+.common_rightPanel .moduleGroup .activity .item .descriptBlock h3{
+    font-size:14px;
+    margin: 5px 20px 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_rightPanel .moduleGroup .activity .item .descriptBlock .separator{
+    height: 0;
+    margin: 5px 20px;
+    vertical-align: top;
+    border-bottom: 1px solid #fff;
+}
+.common_rightPanel .moduleGroup .activity .item .descriptBlock h2{
+    font-size: 14px;
+    margin: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.common_rightPanel .moduleGroup .history .item .descriptBlock,
+.common_rightPanel .moduleGroup .favorites .item .descriptBlock{
+    height: 65px;
+    white-space: nowrap;
+    bottom: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_rightPanel .moduleGroup .history .item:hover .descriptBlock,
+.common_rightPanel .moduleGroup .favorites .item:hover .descriptBlock{
+    height: 95px;
+}
+.common_rightPanel .moduleGroup .history .item .descriptBlock h3,
+.common_rightPanel .moduleGroup .favorites .item .descriptBlock h3{
+    font-size: 16px;
+    margin: 0 20px 0 15px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_rightPanel .moduleGroup .history .item .descriptBlock h2,
+.common_rightPanel .moduleGroup .favorites .item .descriptBlock h2{
+    display:inline-block;
+    font-size: 18px;
+    margin: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top:1px solid #fff;
+}
+.common_rightPanel .moduleGroup .history .item .descriptBlock .more,
+.common_rightPanel .moduleGroup .favorites .item .descriptBlock .more{
+    display:block;
+    margin-left: 15px;
+    font-size: 12px;
+}
+.common_rightPanel .moduleGroup .history .item .descriptBlock .more i,
+.common_rightPanel .moduleGroup .favorites .item .descriptBlock .more i{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background: url(../../../img/customer/icons.png) no-repeat -58px -18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.common_mainPanel .bottomSpace{
+    height: 120px;
+}
+.common_mainPanel .mobileBlock{
+    display: none;
+}
+.common_mainPanel .mobileBlock .titleBar{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.common_mainPanel .mobileBlock b{
+    font-weight: normal;
+    color: #df4141;
+}
+.common_mainPanel .mobileBlock .infoBar{
+    position:relative;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.common_mainPanel .mobileBlock .infoBar .level{
+    position: absolute;
+    right:10px;
+}
+.common_mainPanel .mobileBlock .navGroup{
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+.common_mainPanel .mobileBlock .navGroup ul{
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.common_mainPanel .mobileBlock .navGroup ul:first-child{
+    margin-top: 0;
+}
+.common_mainPanel .mobileBlock .navGroup ul li{
+    height: 39px;
+    line-height: 39px;
+    border-top: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+.common_mainPanel .mobileBlock .navGroup ul li:first-child{
+    border-top:none;
+}
+.common_mainPanel .mobileBlock .navGroup ul li a{
+    display: block;
+    padding-left: 15px;
+}
+.common_mainPanel .mobileBlock .navGroup ul li a i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../../../img/customer/icons.png) no-repeat;
+    vertical-align: -6px;
+    margin-right: 5px;
+}
+.common_mainPanel .mobileBlock .navGroup ul li a b{
+    margin-left: 10px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row01 a i{
+    background-position: 0 -84px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row02 a i{
+    background-position: 0 -108px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row03 a i{
+    background-position: 0 -132px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row04 a i{
+    background-position: 0 -156px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row05 a i{
+    background-position: 0 -180px;
+}
+.common_mainPanel .mobileBlock .navGroup ul .row06 a i{
+    background-position: 0 -204px;
+}
+.common_mainPanel .mobileBlock .otherBlock{
+    height: 95px;
+    text-align: center;
+}
+.common_mainPanel .mobileBlock .otherBlock a{
+    display: inline-block;
+    width: 60px;
+    margin-left: 18px;
+    margin-top: 17px;
+}
+.common_mainPanel .mobileBlock .otherBlock a:first-child{
+    margin-left: 0;
+}
+.common_mainPanel .mobileBlock .otherBlock a i{
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background: url(../../../img/customer/icons.png) no-repeat;
+    margin-bottom: 10px;
+}
+.common_mainPanel .mobileBlock .otherBlock .b01 i{
+    background-position: -23px -84px;
+}
+.common_mainPanel .mobileBlock .otherBlock .b02 i{
+    background-position: -23px -116px;
+}
+.common_mainPanel .mobileBlock .otherBlock .b03 i{
+    background-position: -23px -148px;
+}
+@media \0screen {
+    .common_rightPanel .moduleGroup .module .item .descriptBlock{
+        background:url(../../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+}
+@media only screen and (max-width: 785px) {
+    .common_mainPanel .normalBlock{
+        display: none;
+    }
+    .common_mainPanel .mobileBlock{
+        display: block;
+    }
+    .common_topNavigationBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+
+}
+

@@ -1,0 +1,251 @@
+.common_mainNavBar{
+    top: 150px;
+}
+
+.header .top_logoBlockHolder{
+    height: 40px;
+    display: none;
+}
+.header .top_logoBlock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+.header .top_logoBlock .searchBtn{
+    position:absolute;
+    top:0;
+    right:0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/show/icons.png) no-repeat -144px 0;
+}
+.header .top_logoBlock .searchBlock{
+    display: none;
+    position:absolute;
+    top:0;
+    left: 48px;
+    right:0;
+    height:40px;
+    visibility: hidden;
+}
+.header .top_logoBlock .searchBlock .border{
+    position:relative;
+    margin: 6px 60px 0 10px;
+    height: 26px;
+    line-height:26px;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #eee;
+}
+.header .top_logoBlock .searchBlock .warn{
+    border-color: #f00;
+}
+.header .top_logoBlock .searchBlock .border input{
+    width: 100%;
+    color: #333;
+    border: none;
+    background: none;
+}
+.header .top_logoBlock .searchBlock .border i{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 18px;
+    background: url(../../img/show/icons.png) no-repeat -47px -221px;
+}
+.header .top_logoBlock .searchBlock a{
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    background-color: #000;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.header .bg{
+    width: 100%;
+}
+.common_mainPanel .keywordPanel{
+    text-align: center;
+}
+.common_mainPanel .keywordPanel i{
+    display: inline-block;
+    width: 21px;
+    height: 11px;
+    background: url(../../img/show/icons.png) no-repeat 0 -233px;
+}
+.common_mainPanel .keywordPanel div{
+    color: #333;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.common_mainPanel .listBlock{
+    width: 1200px;
+    margin: 20px auto;
+    border-top: 1px solid #ddd;
+}
+.common_mainPanel .listBlock ul{
+    margin-top: 20px;
+}
+.common_mainPanel .listBlock ul li{
+    display:inline-block;
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+.common_mainPanel .listBlock ul li .bg{
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .listBlock ul li:hover .bg{
+    visibility: visible;
+    opacity: 1;
+}
+.common_mainPanel .listBlock ul li a{
+    display: block;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.common_mainPanel .listBlock ul li .border{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    right: 10px;
+    bottom: 5px;
+}
+.common_mainPanel .listBlock ul li .border img{
+    width: 100%;
+}
+.common_mainPanel .listBlock ul li .descriptBlock{
+    position:absolute;
+    bottom: -79px;
+    left:1px;
+    right: 1px;
+    height: 79px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .listBlock ul li:hover .descriptBlock{
+    bottom: 1px;
+}
+.common_mainPanel .listBlock ul li .descriptBlock h3{
+    font-size: 14px;
+    margin-top: 2px;
+}
+.common_mainPanel .listBlock ul li .descriptBlock h4{
+    font-size: 14px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.common_mainPanel .listBlock ul li .descriptBlock h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.common_mainPanel .listBlock ul li .descriptBlock h1 b{
+    font-weight: normal;
+}
+.common_mainPanel .loadingRow{
+    clear: both;
+    text-align: center;
+    color: #999;
+    visibility: hidden;
+}
+.common_mainPanel .loadingRow .text {
+    font-size: 12px;
+}
+
+@media \0screen {
+    .header .top_logoBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+    .common_mainPanel .listBlock ul li .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .common_mainPanel .listBlock{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 890px) {
+    .common_mainPanel .listBlock ul li{
+        width: 33.33%;
+    }
+}
+@media only screen and (min-width: 784px) and (max-width: 1320px) {
+    .header .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+    .common_mainNavBar{
+        top: 0;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock{
+        position: fixed;
+        height:40px;
+        text-align: center;
+        background:#000;
+        line-height: 34px;
+        border-bottom: 1px solid #999;
+        left: auto;
+    }
+    .header .top_logoBlock img{
+        margin-left: 60px;
+        width: 164px;
+        height: 26px;
+    }
+    .common_mainPanel .listBlock ul {
+        text-align: center;
+    }
+    .common_mainPanel .listBlock ul li {
+        width: 100%;
+        max-width: 292px;
+    }
+
+}

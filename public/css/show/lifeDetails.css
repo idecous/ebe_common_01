@@ -1,0 +1,899 @@
+
+.comm_top_userGroup,
+.comm_top_userGroup .account a,
+.comm_top_userGroup .lang a {
+    color: #333;
+}
+
+.comm_top_userGroup .search i{
+    background: url("../../img/customer/top_user_search_btn.png") no-repeat center center;
+}
+.comm_top_userGroup .shoppingcar > div > i{
+    background: url("../../img/customer/shoppingcar_icon01.png") no-repeat;
+}
+
+.header .top_logoBlockHolder{
+    height: 40px;
+    display: none;
+}
+.header .top_logoBlock{
+    width:100%;
+    height:130px;
+    text-align: center;
+    z-index: 10;
+    background-color: #fff;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+.header .top_logoBlock .searchBtn{
+    position:absolute;
+    top:0;
+    right:0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/show/icons.png) no-repeat -144px 0;
+}
+.header .top_logoBlock .searchBlock{
+    display: none;
+    position:absolute;
+    top:0;
+    left: 48px;
+    right:0;
+    height:40px;
+    visibility: hidden;
+}
+.header .top_logoBlock .searchBlock .border{
+    position:relative;
+    margin: 6px 60px 0 10px;
+    height: 26px;
+    line-height:26px;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #eee;
+}
+.header .top_logoBlock .searchBlock .warn{
+    border-color: #f00;
+}
+.header .top_logoBlock .searchBlock .border input{
+    width: 100%;
+    color: #333;
+    border: none;
+    background: none;
+}
+.header .top_logoBlock .searchBlock .border i{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 18px;
+    background: url(../../img/show/icons.png) no-repeat -47px -221px;
+}
+.header .top_logoBlock .searchBlock a{
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    background-color: #000;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.header .mainNavBar{
+    width: 100%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #666;
+    height: 30px;
+    text-align: center;
+    background-color: #333;
+    z-index: 10;
+}
+.header .mainNavBar li{
+    display: inline-block;
+    width: 120px;
+}
+.header .mainNavBar a{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+}
+.header .mainNavBar li .checked{
+    border-bottom: 2px solid #fff;
+    cursor: default;
+}
+.common_mainNavBar{
+    position: relative;
+    background-color: #333;
+}
+.common_mainNavBar > li .subPopBlock{
+    background-color: #eee;
+    border-bottom: 1px solid #cacaca;
+    box-shadow:0px 10px 5px #dedede;
+}
+.common_mainNavBar .subPopBlock .categoryBlock li .border a{
+    color: #666;
+}
+.common_mainNavBar .subPopBlock .categoryBlock li .border{
+    border-left: 1px solid #cacaca;
+}
+.common_mainNavBar .subPopBlock .categoryBlock li .border a:hover{
+    color: #000;
+}
+
+.common_mainPanel{
+    margin: 0 auto;
+    width:100%;
+    max-width: 1200px;
+}
+.common_mainPanel .navPathPanel{
+    color: #333;
+    line-height: 46px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.common_mainPanel .detailPanel{
+    margin-top: 10px;
+}
+.common_mainPanel .detailPanel .leftBlock{
+    float:left;
+    width: 49.16%;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview{
+    margin: 0 20px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView{
+    position: relative;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .holder{
+    width: 100%;
+    max-width: 550px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .groupContainer{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .loading{
+    background: url(../../img/show/lifeList_loading.gif) no-repeat center center;
+}
+
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .groupContainer .center{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .groupContainer .anim{
+    transition-property:opacity,top,left,width,height;
+    transition-duration:0.5s;
+    transition-timing-function:ease-in;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .groupContainer .center img{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    opacity: 0;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .groupContainer .center img.current{
+    opacity: 1;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .mouseArea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0);
+    z-index: 5;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #ccc;
+    width: 24px;
+    height: 74px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../img/show/icons.png);
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .zoomOut{
+    background-position: -120px -24px;
+    border-bottom: 1px solid #ccc;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .zoomOut:hover{
+    background-position: -120px -96px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .zoomIn{
+    background-position: -120px -48px;
+    border-bottom: 1px solid #ccc;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .zoomIn:hover{
+    background-position: -120px -120px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .reset{
+    background-position: -120px 0;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .toolBlock .reset:hover{
+    background-position: -120px -72px;
+}
+
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel{
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel .holder{
+    width: 100%;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel ul li{
+    position:relative;
+    display: block;
+    float: left;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel ul li i{
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel ul .checked i{
+    border: 1px solid #000;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel ul li img{
+    width: 100%;
+    max-width: 130px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel .arrow{
+    position:absolute;
+    top:50%;
+    height: 190px;
+    width: 20px;
+    background: url(../../img/show/lifeDetails_goodsView_arrow.png) no-repeat;
+    z-index: 1;
+    display: none;
+    margin-top: -95px;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel .arrow.left{
+    background-position: 0 0 ;
+    left: 0;
+}
+.common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel .arrow.right{
+    background-position: -20px 0 ;
+    right: 0;
+}
+
+.common_mainPanel .detailPanel .rightBlock{
+    float:left;
+    width: 50.84%;
+    color: #666;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel{
+    margin: 25px 10px 0 40px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel h2{
+    font-size: 20px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .separator{
+    height: 0;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .NO{
+    font-size: 12px;
+    line-height: 36px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .descript{
+    line-height: 24px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel h3{
+    font-size: 22px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    margin-bottom:25px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel h3 b{
+    font-weight: normal;
+    margin-left: 10px;
+    color: #cc0000;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup{
+    line-height: 69px;
+    border-top: 1px solid #ddd;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .label{
+    width: 60px;
+    float: left;
+    line-height: 69px;
+    height: 69px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list{
+    margin: 0 90px 0 65px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list a{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #999;
+    text-align: center;
+    margin: 0 10px 5px 0;
+    line-height: 30px;
+    color: #666;
+    font-size: 10px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list .checked{
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list .unable{
+    background: url("../../img/show/details_size_unable.jpg") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    color: #999;
+    cursor: default;
+}
+
+.common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup .list{
+    margin-left: 65px;
+    line-height: 40px;
+    padding: 16px 0 0 0;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup .list a{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #999;
+    margin: 0 10px 5px 0;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup .list .checked{
+    border: 1px solid #000;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup .list a img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .appendShopping{
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .appendShopping a{
+    position:relative;
+    display: block;
+    width: 251px;
+    height: 50px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .appendShopping a span{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #676665;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .appendShopping a i{
+    float: right;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../../img/show/icons.png) no-repeat -87px -192px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .preference{
+    color: #c00;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock{
+    border: 1px solid #ddd;
+    margin-top: 37px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .tabBar{
+    height: 40px;
+    line-height: 40px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .tabBar li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #666;
+    background-color: #eee;
+    cursor: pointer;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .tabBar .checked{
+    background-color: #fff;
+    cursor: default;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .contentBlock{
+    margin: 20px 10px;
+    height: 340px;
+    overflow-y: scroll;
+    line-height: 26px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .contentBlock .checked{
+    display: block;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock .contentBlock li{
+    display: none;
+}
+.common_mainPanel .detailPanel .shapeBar{
+    color: #6c6c6c;
+    text-align: right;
+    line-height: 40px;
+    padding-right: 20px;
+}
+.common_mainPanel .detailPanel .shapeBar span{
+    margin-right: 8px;
+}
+.common_mainPanel .detailPanel .shapeBar a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../img/show/icons.png);
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+.common_mainPanel .detailPanel .shapeBar .i01{
+    background-position: -23px -205px;
+}
+.common_mainPanel .detailPanel .shapeBar .i02{
+    background-position: -39px -205px;
+}
+.common_mainPanel .detailPanel .shapeBar .i03{
+    background-position: -55px -205px;
+}
+.common_mainPanel .detailPanel .shapeBar .i04{
+    background-position: -71px -205px;
+}
+
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .toData{
+    float: right;
+    width: 90px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .toData a{
+    color:#666;
+    text-decoration: underline;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .toData i{
+    display: inline-block;
+    width: 23px;
+    height: 21px;
+    background: url(../../img/show/icons.png) no-repeat 0 -205px;
+    vertical-align: -4px;
+    margin-right: 4px;
+}
+
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow{
+    border-top: 1px solid #ddd;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .list{
+    line-height: 40px;
+    margin-left: 65px;
+    padding: 16px 0;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .group{
+    display: inline-block;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .group a{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #999;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: top;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .group a:hover{
+    background-color: #f0f0f0;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .group .inputBorder{
+    display:inline-block;
+    width: 68px;
+    height: 36px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    vertical-align: top;
+    padding-top: 2px;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .group .inputBorder input{
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: #666;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .inventory{
+    display: inline;
+    vertical-align: bottom;
+    color: #666;
+    margin-left: 10px;
+    visibility: hidden;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .inventory b{
+    font-weight: normal;
+    vertical-align: bottom;
+}
+.common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup{
+    clear: both;
+    border-top: 1px solid #ddd;
+}
+
+.common_mainPanel .detailPanel .shapeBar{
+    clear: both;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+}
+.common_mainPanel .mobile_paramMessage{
+    color: #333;
+    display: none;
+}
+.common_mainPanel .mobile_paramMessage .subTitle{
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.common_mainPanel .mobile_paramMessage .content{
+    padding: 10px;
+    color: #666;
+    font-size: 12px;
+}
+.common_mainPanel .mobile_paramMessage .content p{
+    text-indent: 2em;
+}
+.common_mainPanel .mobile_paramMessage .content img{
+    width: 100%;
+}
+.common_mainPanel .mobile_paramMessage  .appendShopping{
+    display:block;
+    font-size:18px;
+    width: 200px;
+    height: 40px;
+    background-color:#df4140;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px auto;
+}
+
+
+
+.common_mainPanel .sizeDataPanel{
+    margin-top: 50px;
+}
+.common_mainPanel .sizeDataPanel h3{
+    font-size:14px;
+    color:#333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.common_mainPanel .sizeDataPanel img{
+    margin-top: 24px;
+    width: 100%;
+    max-width: 772px;
+}
+
+
+.common_mainPanel .elementPanel{
+    margin-top: 40px;
+    color: #333;
+}
+.common_mainPanel .elementPanel h3{
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.common_mainPanel .elementPanel .switchPanel{
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.common_mainPanel .elementPanel .switchPanel .holder{
+    width: 100%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock li{
+    width: 100%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock .coverBlock{
+    float: left;
+    width: 24.9%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock .coverBlock img{
+    width: 100%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock{
+    width: 75%;
+    float: left;
+    position: relative;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul li{
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul li img{
+    width: 100%;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul li h4{
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul li .name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 32px;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock ul li .price{
+
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock .arrow{
+    display: block;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width: 80px;
+    height: 80px;
+    background: url(../../img/show/lifeDetails_element_arrow.png);
+    display: none;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock .arrLeft{
+    left:0;
+    background-position: 0 0;
+}
+.common_mainPanel .elementPanel .switchPanel .rowBlock  .rightBlock .itemsBlock .arrRight{
+    right: 0;
+    background-position: -80px 0;
+}
+.common_mainPanel .elementPanel .navBar{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.common_mainPanel .elementPanel .navBar a{
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    background-color: #ccc;
+    margin-left: 10px;
+}
+.common_mainPanel .elementPanel .navBar a:first-child{
+    margin-left: 0;
+}
+.common_mainPanel .elementPanel .navBar .selected{
+    background-color: #ff9999;
+}
+
+.common_mainPanel .recommendPanel{
+    margin-top: 40px;
+    color: #333;
+}
+.common_mainPanel .recommendPanel h3{
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.common_mainPanel .recommendPanel .contentBlock{
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 20px;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li{
+    margin-left:26.66px;
+    float: left;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li:first-child{
+    margin-left: 0;
+}
+
+.common_mainPanel .recommendPanel .contentBlock ul li a{
+    position:relative;
+    display: block;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a img{
+    width: 100%;
+    max-width: 280px;
+}
+.common_mainPanel .bottomSpace{
+    clear:both;
+    height: 40px;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock{
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    width:100%;
+    height: 80px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a:hover .descriptBlock{
+    bottom: 0;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 24px;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h3 b{
+    margin-left: 6px;
+    font-weight: normal;
+}
+@media \0screen {
+    .common_mainPanel{
+        width :1200px;
+    }
+    .common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+    }
+    .common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .mouseArea{
+        background:url(../1pAlpha.png);
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header{
+        height: auto;
+    }
+    .header .top_logoBlock {
+        position: fixed;
+        left:auto;
+        background: #000;
+        height: 40px;
+        line-height:40px;
+        text-align: center;
+    }
+    .header .top_logoBlock img{
+        display: none;
+    }
+    .header .top_logoBlock h1{
+        display: inline-block;
+        margin-left: 47px;
+    }
+    .header .subNavBar,.header .mainNavBar,.header .common_centerBlock{
+        display: none;
+    }
+
+    .common_mainPanel .detailPanel .leftBlock{
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .detailPanel .leftBlock .goodsPreview{
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .common_mainPanel .detailPanel .leftBlock .goodsPreview .switchPanel{
+        display: none;
+    }
+    .common_mainPanel .detailPanel .rightBlock{
+        float: none;
+        width: auto;
+    }
+    .common_mainPanel .detailPanel .rightBlock .paramPanel{
+        margin: 25px 0 0 0;
+    }
+    .common_mainPanel .detailPanel .rightBlock .paramPanel h1,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel h2,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .NO,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .descript,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel h3 {
+        padding-left: 15px;
+    }
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .label,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .toData,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .appendShopping,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .preference,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock,
+    .common_mainPanel .sizeDataPanel,
+    .common_mainPanel .elementPanel,
+    .common_mainPanel .recommendPanel
+    {
+        display: none;
+    }
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .colorGroup .list,
+    .common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .list{
+        margin: 0 0 0 10px;
+    }
+    .common_mainPanel .mobile_paramMessage{
+        display: block;
+    }
+    .mobileAppendBtn{
+        height: 70px;
+        padding-top:10px;
+        background-color:rgba(255,255,255,0.8);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 50;
+    }
+    .common_mainPanel .detailPanel .shapeBar{
+        text-align: left;
+        padding: 0 10px;
+    }
+}

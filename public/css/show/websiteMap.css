@@ -1,0 +1,124 @@
+.common_mainNavBar{
+    top: 150px;
+}
+.header .top_logoBlock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+
+
+.header{
+    height: 212px;
+}
+.header .common_centerBlock{
+    overflow: hidden;
+    height: 212px;
+}
+.header .bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -750px;
+}
+.common_mainPanel{
+    margin: 0 auto;
+    width:100%;
+    max-width: 1200px;
+}
+.common_mainPanel .navPathPanel{
+    color: #333;
+    line-height: 46px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.common_mainPanel h1{
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    color: #333;
+    padding-top: 15px;
+}
+.common_mainPanel .urlGroup{
+    margin-left: -30px;
+    padding: 15px 0;
+}
+.common_mainPanel .urlGroup a{
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 24px;
+}
+.common_mainPanel div a:hover{
+    color: #df4141;
+}
+
+.common_mainPanel .bottomSpace{
+    height: 120px;
+}
+@media \0screen {
+    .header .top_logoBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+}
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header{
+        height: auto;
+    }
+
+    .header .top_logoBlock img {
+        height: 26px;
+        margin-left: 60px;
+        width: 164px;
+    }
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock {
+        position: fixed;
+        left:auto;
+        background: #000;
+        height: 40px;
+        line-height:34px;
+        text-align: center;
+    }
+    .common_mainPanel .navPathPanel{
+        display: none;
+    }
+    .header .top_logoBlock h1{
+        display: inline-block;
+        margin-left: 47px;
+    }
+    .header .userGroup{
+        display: none;
+    }
+
+    .common_mainPanel h1 {
+        padding: 0 10px;
+    }
+    .common_mainPanel .urlGroup{
+        padding: 15px 10px;
+    }
+    .common_mainPanel .bottomSpace{
+        height: 40px;
+    }
+}

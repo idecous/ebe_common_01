@@ -1,0 +1,406 @@
+.common_mainNavBar{
+    top: 150px;
+}
+.top_logoBlockHolder {
+    display: none;
+    height: 70px;
+}
+.top_logoBlock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+
+
+.top_switchPlaceholder{
+    width: 100%;
+    height: auto;
+}
+.topSwitchViewBlock{
+    position: absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.topSwitchViewBlock ul{
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.topSwitchViewBlock ul li{
+    position:relative;
+    float: left;
+}
+.topSwitchViewBlock ul li img{
+    width: 100%;
+}
+
+.topSwitchViewBlock ul li a{
+    position:absolute;
+    top: 45%;
+    left: 10%;
+    display: block;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    color: #fff;
+}
+.topSwitchViewBlock ul li a h1{
+    font-size: 60px;
+}
+.topSwitchViewBlock ul li a .separator {
+    height: 0;
+    width: 130px;
+    border-top: 1px solid #fff;
+    display:inline-block;
+    vertical-align:top;
+}
+.topSwitchViewBlock ul li a h3{
+    font-size: 18px;
+}
+.topSwitchViewBlock ul li a .button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    margin-top:50px;
+}
+.switchNavPanel{
+    position:absolute;
+    left:0;
+    bottom: -14px;
+    width:100%;
+    height: 4px;
+    text-align: center;
+    line-height: 4px;
+    z-index: 10;
+}
+.switchNavPanel a{
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.switchNavPanel a:first-child{
+    margin-left: 0;
+}
+.switchNavPanel .selected{
+    background-color: #676665;
+}
+
+
+.common_mainPanel .subTitlePanel{
+    min-height: 67px;
+    text-align: center;
+    color: #eee;
+    border-bottom: 1px solid #333;
+    padding-top: 63px;
+    clear: both;
+    position: relative;
+}
+.common_mainPanel .subTitlePanel h1{
+    font-size: 28px;
+    text-transform :uppercase;
+}
+.common_mainPanel .subTitlePanel span{
+    font-size: 18px;
+}
+
+.common_mainPanel .subTitlePanel a{
+    display: inline-block;
+    border: 1px solid #666;
+    color: #666;
+    width: 75px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.common_mainPanel .subTitlePanel a:hover{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.common_mainPanel .workGroup{
+    margin: 20px 4px 0 4px;
+}
+.common_mainPanel .workGroup li{
+    display: inline-block;
+}
+.common_mainPanel .workGroup li a{
+    position: relative;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.common_mainPanel .workGroup li a img{
+    width: 100%;
+}
+.common_mainPanel .workGroup .col01{
+    width: 41.01%;
+}
+.common_mainPanel .workGroup .col01 a{
+    margin-left: 0;
+}
+.common_mainPanel .workGroup .col02{
+    width: 23.92%;
+}
+.common_mainPanel .workGroup .col03{
+    width: 35.05%;
+}
+.common_mainPanel .workGroup .col04{
+    width: 59.04%;
+}
+.common_mainPanel .workGroup .col04 a{
+    margin-left: 0;
+}
+.common_mainPanel .workGroup .col05{
+    width: 40.95%;
+}
+.common_mainPanel .workGroup a .descriptBlock{
+    position: absolute;
+    top: 30%;
+    left: 16.4%;
+    right: 16.4%;
+    bottom: 14.8%;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.common_mainPanel .workGroup a .descriptBlock h1{
+    font-size: 22px;
+}
+.common_mainPanel .workGroup a .descriptBlock h2{
+    font-size: 18px;
+    line-height: 70px;
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .workGroup a .descriptBlock p{
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .workGroup a:hover .descriptBlock h2,
+.common_mainPanel .workGroup a:hover .descriptBlock p{
+    opacity: 1;
+}
+
+
+
+
+
+
+.common_mainPanel .listBlock{
+    margin: 20px 20px 0 0;
+}
+.common_mainPanel .listBlock li{
+    width: 25%;
+    float: left;
+}
+.common_mainPanel .listBlock li a{
+    margin-left: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+.common_mainPanel .listBlock li a img{
+    width: 100%;
+}
+.common_mainPanel .listBlock li a .descriptBlock{
+    position: absolute;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 95px;
+    bottom: -30px;
+    color: #fff;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .listBlock li a:hover .descriptBlock{
+    bottom: 0px;
+}
+.common_mainPanel .listBlock li a .descriptBlock h3{
+    font-size: 16px;
+    margin: 10px 15px 0 15px;
+    line-height: 20px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.common_mainPanel .listBlock li a .descriptBlock h1{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.common_mainPanel .listBlock li a .descriptBlock .more{
+    margin: 10px 15px 0 15px;
+}
+.common_mainPanel .listBlock li a .descriptBlock .more i{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background: url(../../img/show/icons.png) no-repeat -64px -122px;
+    margin-right: 5px;
+}
+.bottomSpace{
+    height: 20px;
+}
+
+@media \0screen {
+    .top_logoBlock,
+    .common_mainPanel .listBlock li a .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+}
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+    .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+    .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+    .common_categoryNavBar{
+        top: 132px;
+    }
+    .common_mainNavBar{
+        position: relative;
+        top: 0;
+        background: #000;
+    }
+    .common_mainPanel .workGroup a:hover .descriptBlock p{
+        display: none;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .top_logoBlockHolder{
+        display: block;
+    }
+    .top_logoBlock{
+        position:fixed;
+        left:auto;
+        background-color:#000;
+        height:40px;
+        text-align: center;
+        line-height: 34px;
+        border-bottom: 1px solid #999;
+    }
+    .top_logoBlock img{
+        margin-left: 60px;
+        width: 164px;
+        height: 26px;
+    }
+    .topSwitchViewBlock ul li a {
+        height: 45px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        left: 0;
+        top: auto;
+        bottom: 0;
+        text-align: left;
+    }
+    .topSwitchViewBlock ul li a h1{
+        font-size: 18px;
+        border-bottom: 1px solid #fff;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .topSwitchViewBlock ul li a .separator {
+        display: none;
+    }
+    .topSwitchViewBlock ul li a h3 {
+        margin-top: 2px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .common_mainPanel .workGroup a:hover .descriptBlock h2,
+    .common_mainPanel .workGroup a:hover .descriptBlock p,
+    .topSwitchViewBlock ul li a .button {
+        display: none;
+    }
+
+    .common_mainPanel .workGroup li{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .common_mainPanel .workGroup li a{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+    .common_mainPanel .workGroup .col01,
+    .common_mainPanel .workGroup .col02,
+    .common_mainPanel .workGroup .col03,
+    .common_mainPanel .workGroup .col04,
+    .common_mainPanel .workGroup .col05{
+        width: 100%;
+    }
+    .common_mainPanel .workGroup .col01 a{
+        max-width: 612px;
+    }
+    .common_mainPanel .workGroup .col02 a{
+        max-width: 354px;
+    }
+    .common_mainPanel .workGroup .col03 a{
+        max-width: 520px;
+    }
+    .common_mainPanel .workGroup .col04 a{
+        max-width: 881px;
+    }
+    .common_mainPanel .workGroup .col05 a{
+        max-width: 608px;
+    }
+
+    .common_mainPanel .listBlock{
+        margin: 20px 0 0 0;
+    }
+    .common_mainPanel .listBlock li{
+        float: none;
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .common_mainPanel .listBlock li a{
+        width: 100%;
+        max-width: 350px;
+        display: inline-block;
+        margin-left: 0;
+    }
+    .common_mainPanel .subTitlePanel a {
+        position: static;
+        display: block;
+        margin: 10px;
+        width: auto;
+    }
+
+}
+

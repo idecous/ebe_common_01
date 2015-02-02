@@ -1,0 +1,269 @@
+.common_mainNavBar{
+    position: relative;
+}
+.header .top_logoBlockHolder{
+    height: 70px;
+    display: none;
+}
+.header .top_logoBlock{
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+.header .top_logoBlock .searchBtn{
+    position:absolute;
+    top:0;
+    right:0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/show/icons.png) no-repeat -144px 0;
+}
+.header .top_logoBlock .searchBlock{
+    display: none;
+    position:absolute;
+    top:0;
+    left: 48px;
+    right:0;
+    height:40px;
+    visibility: hidden;
+}
+.header .top_logoBlock .searchBlock .border{
+    position:relative;
+    margin: 6px 60px 0 10px;
+    height: 26px;
+    line-height:26px;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #eee;
+}
+.header .top_logoBlock .searchBlock .warn{
+    border-color: #f00;
+}
+.header .top_logoBlock .searchBlock .border input{
+    width: 100%;
+    color: #333;
+    border: none;
+    background: none;
+}
+.header .top_logoBlock .searchBlock .border i{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 18px;
+    background: url(../../img/show/icons.png) no-repeat -47px -221px;
+}
+.header .top_logoBlock .searchBlock a{
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    background-color: #000;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.header .top_videoBlock{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.header .top_videoBlock a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.header .top_videoBlock a img{
+    width: 100%;
+}
+.header .top_videoBlock a:hover .playBtn{
+    width: 118px;
+    height: 118px;
+    margin-top: -59px;
+    margin-left: -59px;
+}
+.header .top_videoBlock a .playBtn{
+    display: block;
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -49px;
+    margin-left: -49px;
+    transition: all 0.25s ease-out 0s;
+}
+.header .top_videoPlaceholder{
+    width: 100%;
+}
+.header .top_videoBlock .video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.common_mainPanel{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.common_mainPanel .subNavBar{
+    padding-top: 35px;
+    border-bottom: 1px solid #ddd;
+}
+.common_mainPanel .subNavBar a{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    line-height: 32px;
+    bottom: -1px;
+}
+.common_mainPanel .subNavBar .current{
+    border-bottom: 2px solid #333;
+}
+
+.common_mainPanel  .artistDescriptBlock{
+    margin-top: 20px;
+    position: relative;
+}
+.common_mainPanel  .artistDescriptBlock img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.common_mainPanel  .artistDescriptBlock .textBlock{
+    margin-left: 300px;
+    min-height: 350px;
+    color: #000;
+    min-height: 350px;
+}
+.common_mainPanel  .artistDescriptBlock .textBlock h1{
+    font-size: 24px;
+    line-height: 40px;
+}
+.common_mainPanel .artistDescriptBlock .textBlock p{
+    line-height: 24px;
+}
+.common_mainPanel .separator{
+    height: 8px;
+    background: url(../../img/show/artist_separator01.png);
+    margin-top: 50px;
+}
+.common_mainPanel .multipleViewBlock{
+    position: relative;
+    width: 100%;
+    visibility: hidden;
+    margin-top: 30px;
+}
+.common_mainPanel .multipleViewBlock .holderBG{
+    width: 100%;
+}
+.common_mainPanel .multipleViewBlock .contentBlock{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.common_mainPanel .multipleViewBlock .contentBlock a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.common_mainPanel .multipleViewBlock .contentBlock a .index{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.common_mainPanel .multipleViewBlock .contentBlock a .content{
+    width: 100%;
+}
+.common_mainPanel .bottomSpace{
+    height: 100px;
+}
+@media only screen and (min-width: 784px) and (max-width: 1320px) {
+    .header .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock{
+        position: fixed;
+        height:40px;
+        text-align: center;
+        background:#000;
+        line-height: 34px;
+        border-bottom: 1px solid #999;
+        left: auto;
+        top: 0;
+    }
+    .header .top_logoBlock img{
+        margin-left: 60px;
+        width: 164px;
+        height: 26px;
+    }
+    .header .top_videoBlock a .playBtn{
+        width: 49px;
+        height: 49px;
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .header .top_videoBlock a:hover .playBtn{
+        width: 58px;
+        height: 58px;
+        margin-top: -29px;
+        margin-left: -29px;
+    }
+
+    .common_mainPanel  .artistDescriptBlock{
+        text-align: center;
+    }
+    .common_mainPanel  .artistDescriptBlock img{
+        position: static;
+        width: 100%;
+        max-width: 269px;
+    }
+    .common_mainPanel .artistDescriptBlock .textBlock{
+        margin: 0 10px;
+        min-height: 0;
+    }
+    .common_mainPanel .artistDescriptBlock .textBlock p{
+        text-align: left;
+    }
+}

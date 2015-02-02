@@ -1,0 +1,614 @@
+.common_mainNavBar{
+    top: 150px;
+}
+.header .top_logoBlock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    line-height: 107px;
+    z-index: 10;
+}
+.header .top_logoBlock img{
+    width: auto;
+    height: auto;
+}
+.header .top_logoBlock h1{
+    display: none;
+    font-size: 18px;
+}
+
+.header .bg{
+    display:block;
+}
+.header .bg img{
+    width: 100%;
+}
+.common_mainPanel .subTitlePanel{
+    min-height: 67px;
+    text-align: center;
+    color: #eee;
+    border-bottom: 1px solid #333;
+    padding-top: 63px;
+}
+.common_mainPanel .subTitlePanel h1{
+    font-size: 28px;
+    text-transform :uppercase;
+}
+.common_mainPanel .subTitlePanel span{
+    font-size: 18px;
+}
+
+.common_mainPanel .actionElementBlock{
+    margin: 30px 47px 0 47px;
+    position: relative;
+    overflow: hidden;
+}
+.common_mainPanel .actionElementBlock .holder{
+    width: 100%;
+}
+.common_mainPanel .actionElementBlock .borderBlock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+.common_mainPanel .actionElementBlock .borderBlock .groupPanel{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.common_mainPanel .actionElementBlock .borderBlock .groupPanel .groupBlock{
+    position: relative;
+    overflow: hidden;
+}
+.common_mainPanel .actionElementBlock .borderBlock .groupPanel .groupBlock .mainBlock{
+    width: 48.36%;
+}
+.common_mainPanel .actionElementBlock .borderBlock .groupPanel .groupBlock .mainBlock img{
+    width: 100%;
+}
+.common_mainPanel .actionElementBlock .borderBlock .groupPanel .groupBlock .itemsBlock{
+    position: absolute;
+    top:0;
+    left:48.36%;
+    width: 51.63%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock{
+    height: 50%;
+    float: left;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item{
+    display:block;
+    margin-left:3px;
+    background-color: #fff;
+    color: #020100;
+    overflow: hidden;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border{
+    padding-top:20px;
+    margin: 0 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border img{
+    width: 100%;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h3{
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h2{
+    font-size: 14px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h4{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h4 span{
+    display: none;
+}
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h4 b{
+    font-weight: normal;
+}
+
+.common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border i{
+    display: none;
+}
+.common_mainPanel .actionElementBlock .itemsBlock .arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    background: url(../../img/show/action_item_arrow01.png) no-repeat;
+    z-index: 5;
+    display: none;
+}
+.common_mainPanel .actionElementBlock .itemsBlock .arrLeft{
+    left: 0;
+    background-position: 0 0;
+}
+.common_mainPanel .actionElementBlock .itemsBlock .arrRight{
+    right: 0;
+    background-position: -80px 0;
+}
+.common_mainPanel .actionElementNavBar{
+    text-align: center;
+    height: 24px;
+}
+.common_mainPanel .actionElementNavBar a{
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.common_mainPanel .actionElementNavBar a:first-child{
+    margin-left: 0;
+}
+.common_mainPanel .actionElementNavBar .current{
+    background-color: #676665;
+}
+
+.common_mainPanel .mobileActionElementBlock{
+    position:relative;
+    margin-top: 10px;
+    overflow: hidden;
+    display: none;
+}
+.common_mainPanel .mobileActionElementBlock ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.common_mainPanel .mobileActionElementBlock ul li{
+    float: left;
+}
+.common_mainPanel .mobileActionElementBlock .mainBlock{
+    text-align: center;
+}
+.common_mainPanel .mobileActionElementBlock .mainBlock img{
+    width: 100%;
+    max-width: 680px;
+}
+.common_mainPanel .mobileActionElementBlock .navSpacer{
+    height: 22px;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .item{
+    display: inline-block;
+    width: 199px;
+    background-color: #000;
+    overflow: hidden;
+    margin-bottom: 15px;
+    float: left;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .item img{
+    width: 100%;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock{
+    white-space: nowrap;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock h3{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock h2{
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock h4{
+    font-size: 18px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock h4 b{
+    color: #ff9999;
+    font-weight: normal;
+    margin-left: 4px;
+}
+.common_mainPanel .mobileActionElementBlock .itemsBlock .descriptBlock i{
+    display:block;
+    font-style:normal;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .mobileActionElementBlock .navBar{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    line-height:12px;
+    text-align: center;
+    z-index: 50;
+}
+.common_mainPanel .mobileActionElementBlock .navBar a{
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 5px;
+
+}
+.common_mainPanel .mobileActionElementBlock .navBar a:first-child{
+    margin-left: 0;
+}
+.common_mainPanel .mobileActionElementBlock .navBar .current{
+    background-color: #ff9999;
+}
+
+
+.common_mainPanel .venuesPanel{
+    position: relative;
+    margin-top: 20px;
+}
+.common_mainPanel .venuesPanel .holder{
+    width: 100%;
+}
+.common_mainPanel .venuesPanel .imgGroups{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.common_mainPanel .venuesPanel .imgGroups img{
+    float: left;
+}
+.common_mainPanel .venuesPanel .imgGroups .img01{
+    width: 50%;
+}
+.common_mainPanel .venuesPanel .imgGroups .img02,
+.common_mainPanel .venuesPanel .imgGroups .img03{
+    width: 25%;
+}
+.common_mainPanel .venuesPanel .descriptBlock{
+    position: absolute;
+    left:25%;
+    top:50%;
+    width: 460px;
+    height: 160px;
+    background-color: rgba(0,19,66,0.6);
+    margin-left: -230px;
+    margin-top: -80px;
+    text-align: center;
+}
+.common_mainPanel .venuesPanel .descriptBlock h1{
+    color: #ffdd0e;
+    font-size: 20px;
+    line-height: 50px;
+}
+.common_mainPanel .venuesPanel .descriptBlock p{
+    color: #fff;
+    line-height: 24px;
+}
+
+.common_mainPanel .historyPanel{
+    margin: 20px 0 0 4px;
+    position: relative;
+}
+.common_mainPanel .historyPanel li{
+    width: 12.5%;
+    float: left;
+    margin-bottom: 3px;
+}
+.common_mainPanel .historyPanel li a{
+    position:relative;
+    display: block;
+    margin-right: 3px;
+}
+.common_mainPanel .historyPanel li a img{
+    width: 100%;
+}
+.common_mainPanel .historyPanel li a i{
+    position:absolute;
+    left:0;
+    top:0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.common_mainPanel .historyPanel .popBlock{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .historyPanel .popBlock.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.common_mainPanel .historyPanel .popBlock a{
+    display: block;
+}
+.common_mainPanel .historyPanel .popBlock a img{
+    width: 100%;
+}
+.common_mainPanel .mobileHistoryPanel{
+    position:relative;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 371px;
+    overflow: hidden;
+    display: none;
+}
+.common_mainPanel .mobileHistoryPanel .holder{
+    width: 100%;
+}
+.common_mainPanel .mobileHistoryPanel ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.common_mainPanel .mobileHistoryPanel ul li{
+    float: left;
+}
+.common_mainPanel .mobileHistoryPanel ul li img{
+    width: 100%;
+}
+.common_mainPanel .mobileHistoryPanel .arrow{
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/show/action_item_arrow02.png) no-repeat;
+    z-index: 10;
+    display: none;
+}
+.common_mainPanel .mobileHistoryPanel .arrLeft{
+    left: 0;
+    background-position: 0 0;
+}
+.common_mainPanel .mobileHistoryPanel .arrRight{
+    right: 0;
+    background-position: -40px 0;
+}
+
+
+.common_mainPanel .coherentPanel{
+    margin: 26px 22px 0 26px;
+}
+.common_mainPanel .coherentPanel li{
+    width: 16.66%;
+    float: left;
+    margin-bottom: 3px;
+}
+.common_mainPanel .coherentPanel li a{
+    display: block;
+    margin-right: 3px;
+    background-color: #fff;
+    padding:20px 20px 5px 20px;
+}
+
+.common_mainPanel .coherentPanel li .border{
+    margin: 0 auto;
+    max-width: 199px;
+}
+
+.common_mainPanel .coherentPanel li a img{
+    width: 100%;
+}
+.common_mainPanel .coherentPanel li a .descriptBlock{
+    text-align: center;
+    white-space: nowrap;
+}
+.common_mainPanel .coherentPanel li a .descriptBlock h3{
+    color: #020100;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .coherentPanel li a .descriptBlock h2{
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_mainPanel .coherentPanel li a .descriptBlock h4{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media \0screen {
+    .header .top_logoBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+    }
+    .common_mainPanel .venuesPanel .descriptBlock{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99001966, endColorstr=#99001966);
+    }
+    .common_mainPanel .historyPanel li a i{
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .common_mainPanel .coherentPanel li{
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 1070px) {
+    .common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h3 {
+        line-height: 14px;
+    }
+    .common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h2{
+        line-height: 16px;
+    }
+    .common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border h4{
+        line-height: 14px;
+    }
+    .common_mainPanel .actionElementBlock .borderBlock .itemPanel .itemBlock .item .border {
+        margin: 0 10px;
+        padding-top: 10px;
+    }
+    .common_categoryNavBar{
+        top: 132px;
+    }
+}
+@media only screen and (min-width: 784px) and (max-width: 1020px) {
+    .header .top_logoBlock{
+        position: static;
+        background: #000;
+        height: 100px;
+        line-height: 78px;
+    }
+    .header .top_logoBlock img {
+        width: 287px;
+        height: 45px;
+    }
+    .common_mainNavBar{
+        position: relative;
+        top: 0;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .common_mainPanel .venuesPanel {
+        margin: 20px auto 0 auto;
+        width: 100%;
+        max-width: 751px;
+    }
+    .common_mainPanel .venuesPanel .holder{
+        display: none;
+    }
+    .common_mainPanel .venuesPanel .imgGroups {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .common_mainPanel .venuesPanel .imgGroups .img01 {
+        width: 100%;
+    }
+    .common_mainPanel .venuesPanel .imgGroups .img02 ,
+    .common_mainPanel .venuesPanel .imgGroups .img03{
+        width: 50%;
+    }
+    .common_mainPanel .venuesPanel .descriptBlock{
+        position: static;
+        margin: 0;
+        height: auto;
+        width: auto;
+        text-align: left;
+        background-color: #000;
+        padding-left: 10px;
+    }
+    .common_mainPanel .venuesPanel .descriptBlock h1{
+        font-size: 14px;
+    }
+    .common_mainPanel .venuesPanel .descriptBlock p{
+        font-size: 12px;
+    }
+    .common_mainPanel .coherentPanel li{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .header .top_logoBlockHolder{
+        display: block;
+    }
+    .header .top_logoBlock {
+        position: fixed;
+        left:auto;
+        background: #000;
+        height: 40px;
+        line-height:34px;
+        text-align: center;
+    }
+    .header .top_logoBlock h1{
+        display: inline-block;
+        margin-left: 47px;
+    }
+    .header .top_logoBlock img{
+        display: none;
+    }
+    .common_mainPanel .actionElementNavBar,
+    .common_mainPanel .actionElementBlock ,
+    .common_mainPanel .historyPanel{
+        display: none;
+    }
+    .common_mainPanel .mobileHistoryPanel,
+    .common_mainPanel .mobileActionElementBlock{
+        display: block;
+    }
+
+    .common_mainPanel .coherentPanel {
+        margin: 20px 0 0 0;
+    }
+    .common_mainPanel .coherentPanel li{
+        width: auto;
+        float: none;
+        text-align: center;
+    }
+    .common_mainPanel .coherentPanel li a{
+        display: inline-block;
+        padding: 0;
+        background-color:#000;
+    }
+    .common_mainPanel .coherentPanel li .border{
+        margin: 0;
+    }
+    .common_mainPanel .coherentPanel li .descriptBlock{
+        text-align: left;
+        padding:0 4px;
+    }
+    .common_mainPanel .coherentPanel li a .descriptBlock h3 {
+        color: #fff;
+        border: none;
+        text-align: left;
+        line-height: 18px;
+    }
+    .common_mainPanel .coherentPanel li a .descriptBlock h2 {
+        color: #fff;
+        text-align: left;
+        line-height: 18px;
+    }
+    .common_mainPanel .coherentPanel li a .descriptBlock h4{
+        text-align: left;
+        font-size: 18px;
+    }
+}
