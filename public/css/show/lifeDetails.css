@@ -331,7 +331,6 @@
 .common_mainPanel .detailPanel .rightBlock .paramPanel h3 b{
     font-weight: normal;
     margin-left: 10px;
-    color: #cc0000;
 }
 .common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup{
     line-height: 69px;
@@ -727,7 +726,7 @@
     margin-left: 0;
 }
 .common_mainPanel .elementPanel .navBar .selected{
-    background-color: #ff9999;
+    background-color: #676665;
 }
 
 .common_mainPanel .recommendPanel{
@@ -822,7 +821,6 @@
 .common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock h3 b{
     margin-left: 6px;
     font-weight: normal;
-    color: #cc0000;
 }
 .common_mainPanel .recommendPanel .pageArrow{
     position: absolute;
