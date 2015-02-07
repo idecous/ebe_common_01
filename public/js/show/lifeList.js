@@ -278,6 +278,17 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         this.el = el;
         this.imgEl = el.find(".imgBlock>img");
         this.sizeEl = el.find(".size>span");
+
+        var i,remaining,tStr = "";
+        remaining = 4 - this.sizeEl.length%4;
+        if(remaining == 4){
+            remaining = 0;
+        }
+        for( i=0; i < remaining ;i++){
+            tStr += "\n<i></i>";
+        }
+        tStr += "<div class='justifyLast'></div>";
+        $(tStr).appendTo( el.find(".size") );
         this.submitBtnEl = el.find("input:button");
         this.enNameEl = el.find("h3");
         this.cnNameEl = el.find("h2");
@@ -296,9 +307,19 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         this.imgEl = $("<img src='"+ data.imgUrl +"'/>").appendTo(tEl01);
         var tEl02 = $("<div class='shoppingcar'></div>").appendTo( tEl01 );
         var tEl03 = $("<div class='size'></div>").appendTo( tEl02 );
-        for(var i=0; i < data.sizes.length;i++){
-            tEl03.append( $("<span iid='"+  data.sizesID[i] +"'>"+ data.sizes[i]+"</span>") );
+        var i,remaining,tStr = "";
+        for( i=0; i < data.sizes.length;i++){
+            tStr += "<span iid='"+  data.sizesID[i] +"'>"+ data.sizes[i]+"</span>\n";
         }
+        remaining = 4 - data.sizes.length%4;
+        if(remaining == 4){
+            remaining = 0;
+        }
+        for( i=0; i < remaining ;i++){
+            tStr += "<i></i>";
+        }
+        tStr += "<div class='justifyLast'></div>";
+        tEl03.html(tStr);
         this.sizeEl = tEl03.find("span");
         tEl03 = $("<div class='submitRow'></div>").appendTo(tEl02);
         this.submitBtnEl = $("<input type='button' value='"+this.label01+"'/>").appendTo(tEl03);
