@@ -390,7 +390,7 @@ $(function(){
                 id:"g_" + countID,
                 url:"#",
                 imgUrl:"public/source/show/life_list/" + imgs[ countID%2 ],
-                sizes:["X","M","L"],
+                sizes:["QUEEN","M","L"],
                 sizesID:["S_0_"+countID,"S_1_"+countID,"S_2_"+countID],
                 enName:"eve by eve`s" + countID,
                 cnName:"绿野仙踪组连体泳衣" + countID,
