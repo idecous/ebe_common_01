@@ -751,20 +751,20 @@ var EBE_TopMobileSearch = function(){
 var EBE_CategoryNavBarManager = function(){
     var el = $(".common_mainNavBar");
     if( el.length == 0 ){return;}
-    var displayBlockEl = el.find(".displayBlock");
-    displayBlockEl.each(function(index){
-        var blockEl = displayBlockEl.eq(index);
-        $("<div class='separator s1'></div>").appendTo(blockEl);
-
-        var liEls = blockEl.find(".categoryBlock li");
-        for( var i=0; i < liEls.length ;i++ ){
-            $("<div class='separator s"+(i+2)+"'></div>").appendTo(blockEl);
+    var categoryBlockEls = el.find(".categoryBlock");
+    categoryBlockEls.each(function(index){
+        var categoryBlockEl = categoryBlockEls.eq(index);
+        var aEls = categoryBlockEl.find("a");
+        categoryBlockEl.empty();
+        var i;
+        for( i=0; i < 5;i++){
+            $("<li><div class='border'></div></li>").appendTo(categoryBlockEl);
         }
-        $("<div class='separator s4'></div>").appendTo(blockEl);
+        var borderEls = categoryBlockEl.find(".border");
+        for( i=0; i < aEls.length;i++ ){
+            aEls.eq(i).appendTo(  borderEls.eq( i%5)  );
+        }
     });
-    if( !$.support.leadingWhitespace ){
-        el.append($("<li class='bg'></li>"));
-    }
 };
 var EBE_LetterNews = function(){
     var el = $(".common_interaction .letterNewsBlock");

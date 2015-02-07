@@ -377,9 +377,6 @@
     right: 0;
     top: 0;
 }
-
-
-
 .common_mainPanel .filterPanel .byPrice .priceInput{
     position:relative;
     display: inline-block;
@@ -792,6 +789,9 @@
     .common_mainPanel .listPanel>ul li .contentBlock .imgBlock .shoppingcar{
         background:url(../1pAlpha.png);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7AFFFFFF, endColorstr=#7AFFFFFF);
+    }
+    .common_mainNavBar>li .subPopBlock{
+        filter:none;
     }
 }
 @media only screen and (max-width: 1200px) {

@@ -598,10 +598,9 @@
     margin: 10px auto;
 }
 
-
-
 .common_mainPanel .sizeDataPanel{
     margin-top: 50px;
+    display: none;
 }
 .common_mainPanel .sizeDataPanel h3{
     font-size:14px;
@@ -616,10 +615,10 @@
     max-width: 772px;
 }
 
-
 .common_mainPanel .elementPanel{
     margin-top: 40px;
     color: #333;
+    display: none;
 }
 .common_mainPanel .elementPanel h3{
     font-size: 14px;
@@ -734,41 +733,64 @@
 }
 
 .common_mainPanel .recommendPanel{
-    margin-top: 40px;
-    color: #333;
+    margin-top: 50px;
 }
-.common_mainPanel .recommendPanel h3{
-    font-size: 14px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-}
-.common_mainPanel .recommendPanel .contentBlock{
-    overflow: hidden;
-    text-align: justify;
-    margin-top: 20px;
-}
-.common_mainPanel .recommendPanel .contentBlock ul li{
-    margin-left:26.66px;
+.common_mainPanel .recommendPanel .mightLikeGroup{
+    width: 70.41%;
     float: left;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li:first-child{
-    margin-left: 0;
+.common_mainPanel .recommendPanel .recentViewGroup{
+    width: 29.59%;
+    float: left;
 }
-
-.common_mainPanel .recommendPanel .contentBlock ul li a{
-    position:relative;
-    display: block;
+.common_mainPanel .recommendPanel .titleBar{
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a img{
+.common_mainPanel .recommendPanel .recentViewGroup .titleBar{
+    padding-left: 80px;
+}
+.common_mainPanel .recommendPanel  h3{
+    font-size: 14px;
+    display: inline-block;
+    color: #333;
+}
+.common_mainPanel .recommendPanel .separator{
+    height: 20px;
+}
+.common_mainPanel .recommendPanel .listGroup{
+    position: relative;
+}
+.common_mainPanel .recommendPanel .recentViewGroup .listGroup{
+    margin-left: 50px;
+}
+.common_mainPanel .recommendPanel .listGroup .listContainer{
+    position: relative;
+    overflow: hidden;
+    margin: 0 22px 0 23px;
+}
+.common_mainPanel .recommendPanel .listContainer .bg{
     width: 100%;
-    max-width: 280px;
 }
-.common_mainPanel .bottomSpace{
-    clear:both;
-    height: 40px;
+.common_mainPanel .recommendPanel .listContainer ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock{
+.common_mainPanel .recommendPanel .listContainer ul li{
+    position: relative;
+    display: inline-block;
+}
+.common_mainPanel .recommendPanel .listContainer ul li a{
+    display: block;
+    margin-right: 10px;
+    position: relative;
+}
+.common_mainPanel .recommendPanel .listContainer ul li a img{
+    width: 100%;
+}
+.common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock{
     position: absolute;
     left: 0;
     bottom: -80px;
@@ -778,40 +800,64 @@
     text-align: center;
     transition: all 0.25s ease-out 0s;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a:hover .descriptBlock{
+.common_mainPanel .recommendPanel .listContainer ul li a:hover .descriptBlock{
     bottom: 0;
+    white-space: nowrap;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h1{
+.common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock h1{
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 10px;
     font-size: 14px;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h2{
+.common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock h2{
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 14px;
     line-height: 24px;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h3{
+.common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock h3{
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
 }
-.common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock h3 b{
+.common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock h3 b{
     margin-left: 6px;
     font-weight: normal;
+    color: #cc0000;
+}
+.common_mainPanel .recommendPanel .pageArrow{
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -11px;
+    width: 12px;
+    height: 22px;
+    background: url("../../img/show/icons.png") no-repeat -144px -98px;
+    display: none;
+}
+.common_mainPanel .recommendPanel .pageArrow.rightArrow{
+    background-position: -156px -98px;
+    left: auto;
+    right: 0;
+}
+.common_mainPanel .bottomSpace{
+    clear:both;
+    height: 40px;
 }
 @media \0screen {
     .common_mainPanel{
         width :1200px;
     }
-    .common_mainPanel .recommendPanel .contentBlock ul li a .descriptBlock{
+    .common_mainPanel .recommendPanel .listContainer ul li a .descriptBlock{
         background:url(../1pAlpha.png);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
     }
     .common_mainPanel .detailPanel .leftBlock .goodsPreview .mainView .mouseArea{
         background:url(../1pAlpha.png);
+    }
+    .common_mainNavBar>li .subPopBlock{
+        filter:none;
     }
 }
 @media only screen and (max-width: 785px) {
@@ -833,10 +879,6 @@
         display: inline-block;
         margin-left: 47px;
     }
-    .header .subNavBar,.header .mainNavBar,.header .common_centerBlock{
-        display: none;
-    }
-
     .common_mainPanel .detailPanel .leftBlock{
         float: none;
         width: auto;
@@ -870,8 +912,7 @@
     .common_mainPanel .detailPanel .rightBlock .paramPanel .messageBlock,
     .common_mainPanel .sizeDataPanel,
     .common_mainPanel .elementPanel,
-    .common_mainPanel .recommendPanel
-    {
+    .header .subNavBar,.header .mainNavBar,.header .common_centerBlock{
         display: none;
     }
     .common_mainPanel .detailPanel .rightBlock .paramPanel .sizeGroup .list,
