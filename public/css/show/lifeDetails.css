@@ -600,7 +600,6 @@
 
 .common_mainPanel .sizeDataPanel{
     margin-top: 50px;
-    display: none;
 }
 .common_mainPanel .sizeDataPanel h3{
     font-size:14px;
@@ -618,7 +617,6 @@
 .common_mainPanel .elementPanel{
     margin-top: 40px;
     color: #333;
-    display: none;
 }
 .common_mainPanel .elementPanel h3{
     font-size: 14px;
