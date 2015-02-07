@@ -360,6 +360,24 @@ var EBE_FooterManager = function(){
     if( !window.isCommon_footer ){return;}
     $(".footer .common_centerBlock").removeClass("common_centerBlock").addClass("common_footerCenterBlock");
 };
+var EBE_CategoryNavBarManager = function(){
+    var el = $(".common_mainNavBar");
+    if( el.length == 0 ){return;}
+    var categoryBlockEls = el.find(".categoryBlock");
+    categoryBlockEls.each(function(index){
+        var categoryBlockEl = categoryBlockEls.eq(index);
+        var aEls = categoryBlockEl.find("a");
+        categoryBlockEl.empty();
+        var i;
+        for( i=0; i < 5;i++){
+            $("<li><div class='border'></div></li>").appendTo(categoryBlockEl);
+        }
+        var borderEls = categoryBlockEl.find(".border");
+        for( i=0; i < aEls.length;i++ ){
+            aEls.eq(i).appendTo(  borderEls.eq( i%5)  );
+        }
+    });
+};
 
 var G_enable = true;
 var G_shoppingCar = null;
@@ -376,6 +394,7 @@ $(function(){
     new EBE_MobileMenu();
     new EBE_MobileToTop();
     new EBE_HeightPlaceholderManager();
+    new EBE_CategoryNavBarManager();
 
     G_shoppingCar = new EVE_ShoppingCar(function(id,size){
         console.log("删除购物车商品(商品ID/尺寸)",id,size);
