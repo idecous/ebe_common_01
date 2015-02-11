@@ -1,4 +1,4 @@
-.common_mainNavBar{
+.common_mainNavBarBorder{
     top: 150px;
 }
 .header .top_logoBlockHolder{
@@ -15,6 +15,9 @@
     background:rgba(0,0,0,0.5);
     line-height: 107px;
     z-index: 10;
+}
+.top_logoBlock .top_logoBorder{
+    display: inline-block;
 }
 .header .top_logoBlock img{
     width: auto;
@@ -247,7 +250,7 @@
         font-size: 14px;
         margin-top: -10px;
     }
-    .common_mainNavBar{
+    .common_mainNavBarBorder{
         position: relative;
         top: 0;
     }

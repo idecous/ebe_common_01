@@ -23,6 +23,9 @@
     z-index: 10;
     background-color: #fff;
 }
+.top_logoBlock .top_logoBorder{
+    display: inline-block;
+}
 .header .top_logoBlock img{
     width: auto;
     height: auto;
@@ -114,7 +117,8 @@
     border-bottom: 2px solid #fff;
     cursor: default;
 }
-.common_mainNavBar{
+
+.common_mainNavBarBorder{
     position: relative;
     background-color: #333;
 }

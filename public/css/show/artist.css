@@ -1,4 +1,4 @@
-.common_mainNavBar{
+.common_mainNavBarBorder{
     top: 150px;
 }
 .top_logoBlockHolder {
@@ -16,12 +16,13 @@
     line-height: 107px;
     z-index: 10;
 }
+.top_logoBlock .top_logoBorder{
+    display: inline-block;
+}
 .top_logoBlock img{
     width: auto;
     height: auto;
 }
-
-
 .top_switchPlaceholder{
     width: 100%;
     height: auto;
@@ -151,6 +152,20 @@
 .common_mainPanel .workGroup li a img{
     width: 100%;
 }
+.common_mainPanel .workGroup li a .mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.common_mainPanel .workGroup li a:hover .mask{
+    opacity: 1;
+}
+
 .common_mainPanel .workGroup .col01{
     width: 41.01%;
 }
@@ -181,13 +196,14 @@
     color: #fff;
     text-align: center;
     overflow: hidden;
+    z-index: 1;
 }
 .common_mainPanel .workGroup a .descriptBlock h1{
     font-size: 22px;
 }
 .common_mainPanel .workGroup a .descriptBlock h2{
     font-size: 18px;
-    line-height: 70px;
+    line-height: 60px;
     opacity: 0;
     transition: all 0.25s ease-out 0s;
 }
@@ -201,11 +217,6 @@
 .common_mainPanel .workGroup a:hover .descriptBlock p{
     opacity: 1;
 }
-
-
-
-
-
 
 .common_mainPanel .listBlock{
     margin: 20px 20px 0 0;
@@ -241,6 +252,7 @@
     font-size: 16px;
     margin: 10px 15px 0 15px;
     line-height: 20px;
+    height: 20px;
     border-bottom: 1px solid #fff;
     display: inline-block;
     overflow: hidden;
@@ -250,6 +262,7 @@
 .common_mainPanel .listBlock li a .descriptBlock h1{
     font-size: 18px;
     line-height: 20px;
+    height: 20px;
     margin: 0 15px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -275,6 +288,22 @@
         background:url(../1pAlpha.png);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
     }
+    .common_mainPanel .workGroup a .descriptBlock h2,
+    .common_mainPanel .workGroup a .descriptBlock p{
+        display: none;
+    }
+    .common_mainPanel .workGroup a:hover .descriptBlock h2,
+    .common_mainPanel .workGroup a:hover .descriptBlock p{
+        display: block;
+    }
+    .common_mainPanel .workGroup li a .mask{
+        display: none;
+        background:url(../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    }
+    .common_mainPanel .workGroup li a:hover .mask{
+        display: block;
+    }
 }
 @media only screen and (min-width: 784px) and (max-width: 1020px) {
     .top_logoBlock{
@@ -290,13 +319,14 @@
     .common_categoryNavBar{
         top: 132px;
     }
-    .common_mainNavBar{
+    .common_mainNavBarBorder{
         position: relative;
         top: 0;
         background: #000;
     }
     .common_mainPanel .workGroup a:hover .descriptBlock p{
         display: none;
+        transition:none;
     }
 }
 @media only screen and (max-width: 785px) {
@@ -340,10 +370,10 @@
         margin-left: 20px;
         font-size: 12px;
     }
-    .common_mainPanel .workGroup a:hover .descriptBlock h2,
     .common_mainPanel .workGroup a:hover .descriptBlock p,
     .topSwitchViewBlock ul li a .button {
         display: none;
+        transition:none;
     }
 
     .common_mainPanel .workGroup li{

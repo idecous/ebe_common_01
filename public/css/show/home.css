@@ -1,4 +1,4 @@
-.common_mainNavBar{
+.common_mainNavBarBorder{
     top: 150px;
 }
 .top_logoBlockHolder{
@@ -95,12 +95,13 @@
     line-height: 107px;
     z-index: 10;
 }
+.top_logoBlock .top_logoBorder{
+    display: inline-block;
+}
  .top_logoBlock img{
     width: auto;
     height: auto;
 }
-
-
 .common_mainPanel .subTitlePanel{
     min-height: 67px;
     text-align: center;
@@ -468,7 +469,7 @@
         width: 287px;
         height: 45px;
     }
-    .common_mainNavBar{
+    .common_mainNavBarBorder{
         position: relative;
         top: auto;
     }

@@ -22,33 +22,68 @@ var EBE_NormalFilter = function(){
         return false;
     });
 };
+
 var EBE_PriceFilter = function(currency,minPrice,maxPrice,currentMinPrice,currentMaxPrice){
     var numcheck = /\d|\./;
-    var numInputEl = $(".common_mainPanel .filterPanel .byPrice input:hidden");
+    var numInputEl = $(".common_mainPanel .filterPanel .byPrice input:text");console.log(numInputEl);
     var minCurrentPrice = currentMinPrice;
     var maxCurrentPrice = currentMaxPrice;
+
     var formEl = $(".common_mainPanel .filterPanel .byPrice form");
     var slider = new EBE_PriceFilterSlider(updateBySlider,function(){
         formEl.submit();
     });
     var labelGroupEl = $(".filterPanel .byPrice .labelGroup");
-    var spanEl01 = $("<span class='minPrice'>"+currency+currentMinPrice+"</span>").appendTo(labelGroupEl);
-    var spanEl02 = $("<span class='maxPrice'>"+currency+currentMaxPrice+"</span>").appendTo(labelGroupEl);
+    var spanEl01 = $("<span class='minPrice'>"+currency+currentMinPrice+"</span>").appendTo(labelGroupEl).text(minPrice.toFixed(2));
+    var spanEl02 = $("<span class='maxPrice'>"+currency+currentMaxPrice+"</span>").appendTo(labelGroupEl).text(maxPrice.toFixed(2));
 
     function updateBySlider(minPre,maxPre){
         minCurrentPrice = parseFloat((minPrice +  (maxPrice-minPrice)*minPre).toFixed(2));
         maxCurrentPrice = parseFloat( (minPrice +  (maxPrice-minPrice)*maxPre).toFixed(2) );
-        numInputEl.eq(0).val(  minCurrentPrice );
-        numInputEl.eq(1).val(  maxCurrentPrice );
-        spanEl01.text( currency + minCurrentPrice);
-        spanEl02.text( currency + maxCurrentPrice);
+        numInputEl.eq(0).val( minCurrentPrice.toFixed(2) );
+        numInputEl.eq(1).val( maxCurrentPrice.toFixed(2) );
     }
-
-    numInputEl.eq(0).val(minCurrentPrice);
-    numInputEl.eq(1).val(maxCurrentPrice);
+    numInputEl.eq(0).val(minCurrentPrice.toFixed(2));
+    numInputEl.eq(1).val(maxCurrentPrice.toFixed(2));
     slider.updateByInput(  (minCurrentPrice-minPrice)/(maxPrice-minPrice) ,(maxCurrentPrice-minPrice)/(maxPrice-minPrice) );
+    numInputEl.keypress(function(e){
+        var keynum;
+        if(window.event){
+            keynum = e.keyCode;
+        }else if(e.which){
+            keynum = e.which;
+        }
+        if(keynum==8){
+            return true;
+        }
+        var keychar = String.fromCharCode(keynum);
+        return numcheck.test(keychar);
+    }).blur(function(){
+        var inputIndex = numInputEl.index(this);
+        var el = numInputEl.eq(  inputIndex );
+        var val = parseFloat( el.val() );
+        if( inputIndex == 0 ){
+            if( isNaN(val) ||  val < minPrice){
+                val = minPrice;
+            }else if(  val > maxCurrentPrice ){
+                val = maxCurrentPrice;
+            }
+            minCurrentPrice = val;
+        }else{
+            if( isNaN(val) ||  val > maxPrice){
+                val = maxPrice;
+            }else if( val < minCurrentPrice ){
+                val  = minCurrentPrice;
+            }
+            maxCurrentPrice = val;
+        }
+        el.val( val.toFixed(2) );
+        slider.updateByInput(  (minCurrentPrice-minPrice)/(maxPrice-minPrice) ,(maxCurrentPrice-minPrice)/(maxPrice-minPrice) );
+    })
+
 };
 var EBE_PriceFilterSlider = function(updateBySlider,dragCompleteFn){
+    var thumbWidth = 16;
     var el = $(".byPrice .slider");
     $("<div class='bg'></div>").appendTo(el);
     var trackEl = $("<div class='track'></div>").appendTo(el);
@@ -67,11 +102,12 @@ var EBE_PriceFilterSlider = function(updateBySlider,dragCompleteFn){
         var minPos = getMinPointPos();
         var maxPos = getMaxPointPos();
         trackEl.css({
-            "left":minPos+4,
+            "left":minPos+ thumbWidth/2,
             "width":(maxPos-minPos)
         });
         if(!byInput){
-            updateBySlider( (minPos+8)/(sliderWidth-16) - 8/(sliderWidth-16) ,maxPos/(sliderWidth-16)- 8/(sliderWidth-16) );
+            updateBySlider( (minPos+thumbWidth)/(sliderWidth-thumbWidth*2) - thumbWidth/(sliderWidth-thumbWidth*2) ,
+                maxPos/(sliderWidth-thumbWidth*2)- thumbWidth/(sliderWidth-thumbWidth*2) );
         }
     }
     pointUpdateTrack(true);
@@ -85,8 +121,9 @@ var EBE_PriceFilterSlider = function(updateBySlider,dragCompleteFn){
 };
 var EBE_PriceFilterSliderPoint = function(owner,sliderWidth,isMin,getOtherPosition,updateTrack,dragCompleteFn){
     var documentEl = $(document);
+    var thumbWidth = 16;
     var el = $("<a href='javascript:;'></a>").appendTo(owner);
-    el.css("left",isMin?0: sliderWidth - 8 );
+    el.css("left",isMin?0: sliderWidth - thumbWidth );
 
     var extraPos,startPos,elOffset;
     el.mousedown(function(e){
@@ -104,17 +141,17 @@ var EBE_PriceFilterSliderPoint = function(owner,sliderWidth,isMin,getOtherPositi
             if( tX < 0  ){
                 tX = 0;
             }
-            if( tX > sliderWidth-8){
-                tX = sliderWidth-8;
+            if( tX > sliderWidth-thumbWidth){
+                tX = sliderWidth-thumbWidth;
             }
             var otherPointPosition = getOtherPosition();
             if( isMin ){
-                if( tX+8 > otherPointPosition){
-                    tX = otherPointPosition-8;
+                if( tX+thumbWidth > otherPointPosition){
+                    tX = otherPointPosition-thumbWidth;
                 }
             }else{
-                if( tX < otherPointPosition+8){
-                    tX = otherPointPosition+8;
+                if( tX < otherPointPosition+thumbWidth){
+                    tX = otherPointPosition+thumbWidth;
                 }
             }
             el.css("left",tX);
@@ -138,16 +175,15 @@ var EBE_PriceFilterSliderPoint = function(owner,sliderWidth,isMin,getOtherPositi
     }
     function setPosition(pre){
         if(isMin){
-            el.css("left", pre*(sliderWidth-16)  );
+            el.css("left", pre*(sliderWidth-thumbWidth*2)  );
         }else{
-            el.css("left", pre*(sliderWidth-16) + 8  );
+            el.css("left", pre*(sliderWidth-thumbWidth*2) + thumbWidth  );
         }
     }
     return {"getPosition":getPosition,
             "setPosition":setPosition
     }
 };
-
 
 
 
@@ -287,7 +323,7 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         for( i=0; i < remaining ;i++){
             tStr += "\n<i></i>";
         }
-        tStr += "<div class='justifyLast'></div>";
+        tStr += "<div class='common_justifyFix'></div>";
         $(tStr).appendTo( el.find(".size") );
         this.submitBtnEl = el.find("input:button");
         this.enNameEl = el.find("h3");
@@ -316,9 +352,9 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
             remaining = 0;
         }
         for( i=0; i < remaining ;i++){
-            tStr += "<i></i>";
+            tStr += "<i></i>\n";
         }
-        tStr += "<div class='justifyLast'></div>";
+        tStr += "<div class='common_justifyFix'></div>";
         tEl03.html(tStr);
         this.sizeEl = tEl03.find("span");
         tEl03 = $("<div class='submitRow'></div>").appendTo(tEl02);
@@ -329,11 +365,8 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         $("<h2>"+ data.cnName+"</h2>").appendTo(descriptBlockEl);
         var priceBlockEl = $("<div class='price'></div>").appendTo(descriptBlockEl);
 
-        //$("<h1 class='enFontFamily'><i>"+ this.unit+"</i><b>"+
         $("<h1 class='enFontFamily'><b>"+
-            //data.realPrice + "</b></h1><span>市场价：<i>"+ this.unit+"</i><b>"+
         data.realPrice + "</b></h1><span>"+this.label02+"<b>"+
-
         data.otherPrice + "</b></span>").appendTo( priceBlockEl );
         this.init();
     };
@@ -411,7 +444,7 @@ $(function(){
                 id:"g_" + countID,
                 url:"#",
                 imgUrl:"public/source/show/life_list/" + imgs[ countID%2 ],
-                sizes:["QUEEN","M","L"],
+                sizes:["QUEEN","M","L","QUEEN","M","QUEEN","M","L","QUEEN","M","QUEEN","M","L","QUEEN"],
                 sizesID:["S_0_"+countID,"S_1_"+countID,"S_2_"+countID],
                 enName:"eve by eve`s" + countID,
                 cnName:"绿野仙踪组连体泳衣" + countID,

@@ -765,6 +765,9 @@ var EBE_CategoryNavBarManager = function(){
             aEls.eq(i).appendTo(  borderEls.eq( i%5)  );
         }
     });
+    if(!!window.ActiveXObject && !!document.documentMode ){
+        $(".common_mainNavBarBorder").append($("<div class='bg'></div>"));
+    }
 };
 var EBE_LetterNews = function(){
     var el = $(".common_interaction .letterNewsBlock");

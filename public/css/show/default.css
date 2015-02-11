@@ -845,20 +845,26 @@ input,button,select,textarea{
 .common_mobileNav .categoryBlock li a:before{
     content: "-";
 }
-
-.common_mainNavBar{
+.common_mainNavBarBorder{
     position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: 60;
     background: rgba(0,0,0,0.4);
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
+    z-index: 60;
+    height: 30px;
+}
+.common_mainNavBar{
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    text-align: justify;
+    height: 30px;
 }
 .common_mainNavBar>li{
     display: inline-block;
-    width: 110px;
     line-height: 30px;
 }
 .common_mainNavBar li .btnBlock a{
@@ -1212,7 +1218,7 @@ input,button,select,textarea{
         background:url(../1pAlpha.png);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
     }
-    .common_mainNavBar .bg{
+    .common_mainNavBarBorder .bg{
         position: absolute;
         top:0;
         left:0;
@@ -1226,7 +1232,7 @@ input,button,select,textarea{
         background:url(../1pAlpha.png);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     }
-    .common_mainNavBar > li .subPopBlock{
+    .common_mainNavBar>li .subPopBlock{
         z-index: 60;
     }
     .comm_appointmentPopWindow{
@@ -1247,9 +1253,6 @@ input,button,select,textarea{
         margin-left: 0;
         display: block;
         margin-top: 5px;
-    }
-    .common_mainNavBar > li{
-        width: 10%;
     }
 }
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
@@ -1325,7 +1328,7 @@ input,button,select,textarea{
     .common_mobile_topMenuBtn .return{
         display: block;
     }
-    .common_mainNavBar,
+    .common_mainNavBarBorder,
     .comm_top_userGroup,
     .comm_appointmentPopWindow.show,
     .comm_appointmentPopWindow .block.show,

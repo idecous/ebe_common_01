@@ -30,9 +30,9 @@ var EBE_TopSwitchView = function(holderEl,el){
         clearTimeout( timer );
         ulEl.stop();
         liWidth = holderEl.width();
-        var allHeigth = holderEl.height();
-        liHeight = allHeigth ;
-        el.height(allHeigth);
+        var allHeight = holderEl.height();
+        liHeight = allHeight;
+        el.height(allHeight);
         ulEl.width( liWidth *  (liCount +2 ) ).height(liHeight);
         liEl.width(liWidth).height(liHeight);
         if( liCount < 2){return;}
@@ -46,6 +46,9 @@ var EBE_TopSwitchView = function(holderEl,el){
         navBtnEl.eq(index).addClass("selected");
     }
     function navLiClickHandler(){
+        if( !isInit ){
+            return;
+        }
         var tIndex = navBtnEl.index(this);
         if( index == tIndex ){return;}
         animaPosByIndex( index,tIndex);

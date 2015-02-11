@@ -21,6 +21,9 @@
     z-index: 10;
     background-color: #fff;
 }
+.top_logoBlock .top_logoBorder{
+    display: inline-block;
+}
 .header .top_logoBlock img{
     width: auto;
     height: auto;
@@ -119,7 +122,7 @@
     background-position:  -40px 0;
     margin-top: 10px;
 }
-.common_mainNavBar{
+.common_mainNavBarBorder{
     position: relative;
     background-color: #333;
 }
@@ -347,12 +350,12 @@
 }
 .common_mainPanel .filterPanel .byPrice .slider a{
     position: absolute;
-    top: -3px;
+    top: -6px;
     left: 0;
     display: block;
-    width: 8px;
-    height: 15px;
-    background: url("../../img/show/icons.png") no-repeat -174px -68px;
+    width: 16px;
+    height: 16px;
+    background: url("../../img/show/life_list_price_thumb.png");
 }
 .common_mainPanel .filterPanel .byPrice .slider .bg{
     border: 1px solid #aaa;
@@ -363,7 +366,7 @@
     top:0;
     left: 0;
     width: 0;
-    background: #464646;
+    background: #848484;
     height: 6px;
 }
 .common_mainPanel .filterPanel .labelGroup{
@@ -402,6 +405,7 @@
     height: 26px;
     display: inline-block;
     margin-left: 6px;
+    cursor: pointer;
 }
 .common_mainPanel .filterPanel .byColor{
     margin-top: 50px;
@@ -603,9 +607,9 @@
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock .shoppingcar{
     position: absolute;
     left:0;
-    bottom:-140px;
+    bottom:-170px;
     width:100%;
-    height: 130px;
+    height: 160px;
     background: rgba(255,2555,2555,0.5);
     padding-top: 5px;
     transition: all 0.25s ease-out 0s;
@@ -621,7 +625,7 @@
     height: 22px;
     line-height: 22px;
     border: 1px solid #999;
-    margin: 0 2px 2px 0;
+    margin: 0 0 2px 0;
     text-align: center;
     background-color: #fff;
     color: #666;
@@ -633,9 +637,10 @@
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock .shoppingcar .size i{
     display: inline-block;
     width: 18.93%;
+    height: 22px;
     border: 1px solid #999;
     visibility: hidden;
-    margin: 0 2px 2px 0;
+    margin: 0 0 2px 0;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock .shoppingcar .size .checked{
     background-color: #ccc;

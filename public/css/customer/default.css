@@ -119,6 +119,9 @@ input,button,select,textarea{
     color: #fff;
     font-size: 16px;
 }
+.common_topNavigationBlock .top_logoBorder{
+    display: inline-block;
+}
 .common_topNavigationBlock img{
     margin-top: 30px;
 }
@@ -534,15 +537,23 @@ input,button,select,textarea{
     color: #333;
     font-size: 12px;
 }
-.common_mainNavBar{
+
+.common_mainNavBarBorder{
     position: relative;
     text-align: center;
     z-index: 60;
     background-color: #333;
+    height: 30px;
+}
+.common_mainNavBar{
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;
+    text-align: justify;
+    height: 30px;
 }
 .common_mainNavBar>li{
     display: inline-block;
-    width: 10%;
     line-height: 30px;
 }
 .common_mainNavBar li .btnBlock a{
@@ -658,7 +669,7 @@ input,button,select,textarea{
     padding-left: 20px;
 }
 .common_normalContent .common_leftPanel .current{
-    color: #df4141;
+    color: #676665;
 }
 .common_normalContent .common_leftPanel .separator{
     height: 0;
@@ -701,7 +712,7 @@ input,button,select,textarea{
     padding-left: 30px;
 }
 .common_normalContent .common_leftPanel ul .current{
-    background-color: #df4141;
+    background-color: #676665;
 }
 .common_normalContent .common_leftPanel ul .current a{
     color: #fff;
@@ -950,7 +961,7 @@ input,button,select,textarea{
     border-bottom: 1px solid #ddd;
 }
 .common_help_leftPanel .current{
-    background-color: #df4141;
+    background-color: #676665;
     color: #fff;
     border-bottom: none;
 }
@@ -1136,9 +1147,9 @@ input,button,select,textarea{
     .common_help_topTitlePanel ,
     .common_mainPanel .common_subNavBar,
     .common_help_leftPanel,
-    .common_topNavigationBlock img,
+    .common_topNavigationBlock .top_logoBorder,
     .common_normalContent .common_leftPanel,
-    .common_mainNavBar,
+    .common_mainNavBarBorder,
     .footer .servicesPanel ,
     .footer .bottomNav{
         display: none;

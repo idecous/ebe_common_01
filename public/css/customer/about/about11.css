@@ -1,0 +1,126 @@
+.mainContainer{
+    background-color: #fff;
+    height: 510px;
+}
+
+.descriptionBlock{
+    float: left;
+    width: 450px;
+    margin-left: 10px;
+}
+.descriptionBlock h1{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    height: 60px;
+    margin-top: 35px;
+}
+.descriptionBlock h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 35px;
+}
+.descriptionBlock h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+.descriptionBlock b{
+    display:block;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+.descriptionBlock .separator{
+    height: 1px;
+    background-color: #000;
+    margin-top: 20px;
+    width: 325px;
+}
+.descriptionBlock .operationGroup{
+    margin-top: 20px;
+}
+.descriptionBlock .operationGroup a{
+    display: inline-block;
+    background: url(../../../img/about/stores_operation.png);
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+.descriptionBlock .operationGroup a:last-child{
+    background-position: -16px 0;
+    margin-left: 15px;
+}
+.rightBlock .mapGroup{
+    position:relative;
+    width: 100%;
+    height: 435px;
+    overflow: hidden;
+}
+.rightBlock .infonWindow{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 353px;
+    height: 145px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+.rightBlock .infonWindow .closeBtn{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 4px;
+    right: 4px;
+    background: url(../../../img/about/store_close.png);
+}
+.rightBlock .infonWindow img{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border: 1px solid #000;
+    width: 134px;
+    height: 130px;
+}
+.rightBlock .infonWindow .descripBlock{
+    float: right;
+    width: 185px;
+    margin-right: 10px;
+    color: #fff;
+}
+.rightBlock .infonWindow .descripBlock h1{
+    font-size: 18.35px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+.rightBlock .infonWindow .descripBlock h2{
+    font-size: 12px;
+    font-weight: normal;
+}
+.rightBlock .infonWindow .descripBlock p{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 3px;
+}
+.rightBlock .infonWindow .descripBlock p:last-child{
+    font-size: 8px;
+    line-height: 14px;
+}
+.bottomSpace{
+    height: 120px;
+}
+.mapCanvas{
+    width: 100%;
+    height: 100%;
+}
+@media \0screen {
+    .rightBlock .infonWindow{
+        background:url(../../1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+    }
+
+}
+@media only screen and (max-width: 785px) {
+    .bottomSpace{
+        height: 20px;
+    }
+}
