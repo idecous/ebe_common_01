@@ -781,6 +781,8 @@
     width: 100%;
     height: 100%;
 }
+
+
 .common_mainPanel .listPanel .mobileFilterPop .pricePop li{
     position:relative;
     width: auto;
@@ -798,7 +800,50 @@
     width: 50%;
     float: left;
 }
-
+.common_mainPanel .listPanel .mobileFilterPop .pricePop li .priceInput{
+    position:relative;
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #666;
+    text-align: left;
+    overflow:hidden;
+}
+.common_mainPanel .listPanel .mobileFilterPop .pricePop li .spacer{
+    position: absolute;
+    top: 17px;
+    right: -2px;
+    color: #666;
+}
+.common_mainPanel .listPanel .mobileFilterPop .pricePop li .inputGroup .half:first-child .priceInput{
+    margin-right: 10px;
+}
+.common_mainPanel .listPanel .mobileFilterPop .pricePop li .priceInput input{
+    position:absolute;
+    left: 20px;
+    right:2px;
+    border: medium none;
+    color: #000;
+    font-size: 14px;
+    padding: 4px 2px 2px;
+    position: absolute;
+    top: 2px;
+    width: auto;
+}
+.common_mainPanel .listPanel .mobileFilterPop .pricePop li  input[type="submit"]{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background-color: #000;
+    border: none;
+    display:block;
+    height: 30px;
+    width: 70px;
+}
 
 @media \0screen {
     .common_mainPanel{
@@ -917,11 +962,5 @@
     }
     .common_mainPanel .listPanel .mobileFilterPop{
         visibility: visible;
-    }
-}
-@media only screen and (max-width: 520px) {
-    .common_mainPanel .listPanel>ul li {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }

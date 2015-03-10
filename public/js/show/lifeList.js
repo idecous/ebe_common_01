@@ -321,7 +321,7 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
             remaining = 0;
         }
         for( i=0; i < remaining ;i++){
-            tStr += "\n<i></i>";
+            tStr += "\n<i>i</i>";
         }
         tStr += "<div class='common_justifyFix'></div>";
         $(tStr).appendTo( el.find(".size") );
@@ -352,7 +352,7 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
             remaining = 0;
         }
         for( i=0; i < remaining ;i++){
-            tStr += "<i></i>\n";
+            tStr += "<i>i</i>\n";
         }
         tStr += "<div class='common_justifyFix'></div>";
         tEl03.html(tStr);
