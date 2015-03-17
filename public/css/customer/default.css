@@ -515,14 +515,14 @@ input,button,select,textarea{
     color: #fff;
 }
 .comm_top_userGroup .shoppingcar .popWin .borderContent .statsRow b{
-    color: #df4141;
+    color: #fff;
     font-weight: normal;
 }
 .comm_top_userGroup .shoppingcar .popWin .toPay{
     display:block;
     height: 40px;
     line-height: 40px;
-    background-color: #df4141;
+    background-color: #676665;
     color: #fff;
     text-align: center;
 }
