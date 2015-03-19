@@ -584,9 +584,9 @@
     text-align: center;
 }
 .common_mainPanel .listPanel>ul li .contentBlock{
-    margin: 0 18px;
     max-width: 280px;
-    display: inline-block;
+    display: block;
+    margin: 0 18px;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock{
     position: relative;
@@ -594,6 +594,7 @@
 }
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock .bg{
     position: static;
+    width: 100%;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .imgBlock img{
     width: 100%;
@@ -669,19 +670,26 @@
 .common_mainPanel .listPanel>ul li .contentBlock .descriptBlock{
     padding-top:10px;
     color: #333;
-    white-space: nowrap;
     overflow: hidden;
     text-align: left;
+    width: 100%;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .descriptBlock h3{
     font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .descriptBlock h2{
     font-size: 14px;
     line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .descriptBlock .price {
     position:relative;
+    padding: 0 18px;
 }
 .common_mainPanel .listPanel>ul li .contentBlock .descriptBlock .price h1{
     font-size: 18px;

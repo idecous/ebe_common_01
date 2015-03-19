@@ -25,7 +25,7 @@ var EBE_NormalFilter = function(){
 
 var EBE_PriceFilter = function(currency,minPrice,maxPrice,currentMinPrice,currentMaxPrice){
     var numcheck = /\d|\./;
-    var numInputEl = $(".common_mainPanel .filterPanel .byPrice input:text");console.log(numInputEl);
+    var numInputEl = $(".common_mainPanel .filterPanel .byPrice input:text");
     var minCurrentPrice = currentMinPrice;
     var maxCurrentPrice = currentMaxPrice;
 
@@ -184,9 +184,6 @@ var EBE_PriceFilterSliderPoint = function(owner,sliderWidth,isMin,getOtherPositi
             "setPosition":setPosition
     }
 };
-
-
-
 
 var EBE_SideSearchManager = function(){
     var formEl = $(".common_mainPanel .filterPanel .bySearch li form");
@@ -447,7 +444,7 @@ $(function(){
                 sizes:["QUEEN","M","L","QUEEN","M","QUEEN","M","L","QUEEN","M","QUEEN","M","L","QUEEN"],
                 sizesID:["S_0_"+countID,"S_1_"+countID,"S_2_"+countID],
                 enName:"eve by eve`s" + countID,
-                cnName:"绿野仙踪组连体泳衣" + countID,
+                cnName:"绿野仙踪组连体泳--------------------衣" + countID,
                 realPrice:"1500.00",
                 otherPrice:"1500.00"
             });
@@ -481,9 +478,9 @@ $(function(){
     list.setLoadPageHandler(function(page){
         console.log("读取页面数据(页数)",page);
         //请求服务器
-        list.appendData( getPageData(1) , page++ );
+        list.appendData( getPageData(9) , page++ );
     });
 
     list.isLoading = true;
-    list.appendData( getPageData(2) , 1 );
+    list.appendData( getPageData(9) , 1 );
 });
