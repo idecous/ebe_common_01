@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../../public/css/customer/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/customer/account/register.css"/>
+    <script type="text/javascript" src="../../public/js/jquery.js"></script>
+    <script type="text/javascript" src="../../public/js/customer/default.js"></script>
+    <script type="text/javascript" src="../../public/js/customer/account/register.js"></script>
+</head>
+<body>
+<div class="common_normalContent">
+    <header>
+        <div class="common_topNavigationBlock fixed">
+            <div class="common_mobile_topMenuBtn">
+                <a class="return" href="#"></a>
+            </div>
+            <h1>注册</h1>
+        </div>
+    </header>
+    <div class="common_mainPanel">
+        <img class="bgImg" src="../../public/source/customer/account/login_bg.jpg" />
+        <div class="leftGroup">
+            <div class="navBar">
+                <a href="#">EVE首页</a>
+                <a href="javascript:;">加入收藏 </a>
+            </div>
+            <img class="logo" src="../../public/img/customer/account/login_logo.png" />
+        </div>
+        <div class="rightGroup">
+            <div class="loginPanel">
+                <div class="bg">
+                    <form>
+                        <img class="logo" src="../../public/img/customer/account/login_logo.png" />
+                        <div class="topWarn"><div><i></i><span>请输入姓</span></div></div>
+                        <div class="topWarn"><div><i></i><span>请输入名</span></div></div>
+                        <div class="topWarn"><div><i></i><span>请输入邮箱</span></div></div>
+                        <div class="topWarn"><div><i></i><span>请输入6-16位密码</span></div></div>
+                        <div class="topWarn"><div><i></i><span>请重复输入位密码</span></div></div>
+
+                        <div class="label"><span>姓</span><div class='warnBlock'><i></i><span>请输入姓</span></div></div>
+                        <div class="inputRow">
+                            <span>请输入姓</span>
+                            <input type="text" />
+                        </div>
+                        <div class="label"><span>名</span><div class='warnBlock'><i></i><span>请输入名</span></div></div>
+                        <div class="inputRow notFirstRow">
+                            <span>请输入名</span>
+                            <input type="text" />
+                        </div>
+                        <div class="label"><span>用户名</span><div class='warnBlock'><i></i><span>请输入邮箱</span></div></div>
+                        <div class="inputRow notFirstRow">
+                            <span>请输入手机号或者邮箱 </span>
+                            <input type="text" />
+                        </div>
+                        <div class="label notFirst"><span>密码</span><div class='warnBlock'><i></i><span>请输入6-16位密码</span></div></div>
+                        <div class="inputRow notFirstRow">
+                            <span>请输入密码</span>
+                            <input type="password" />
+                        </div>
+                        <div class="label notFirst"><span>确认密码</span><div class='warnBlock'><i></i><span>请重复输入位密码</span></div></div>
+                        <div class="inputRow notFirstRow lastFirstRow">
+                            <span>请重复输入您的密码</span>
+                            <input type="password" />
+                        </div>
+                        <div class="serverError notFirstRow show">
+                            <ul class="messages">
+                                <li class="error-msg">
+                                    <ul>
+                                        <li><span>There is already an account with this email address.</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="protocolRow"><input type="checkbox" /><span>您已阅读并同意</span><a href="#">《EBE用户注册协议》</a></div>
+                        <input type="submit" value="立即注册"/>
+                    </form>
+                    <div class="registerRow"><span>已经是EBE会员？</span><a href="#">立即登录</a></div>
+                </div>
+            </div>
+            <div class="mobileRegister">
+                <span>已是会员，</span><a href="#">马上登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
