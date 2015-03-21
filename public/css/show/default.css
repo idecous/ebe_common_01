@@ -943,7 +943,6 @@ input,button,select,textarea{
 }
 .common_normalContent{
     position:relative;
-    transition: all 0.25s ease-out 0s;
     left: 0;
 }
 

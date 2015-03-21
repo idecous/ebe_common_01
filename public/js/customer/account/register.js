@@ -87,34 +87,60 @@ var EBE_Register = function(patternAccount,patternPassword){
 
 
 
+
     formEl.submit(function(){
         serverErrorEl.css("visibility","hidden");
         var correct0_1 = name1Row.verify();
-        var correct0_2 = name2Row.verify();
-
-        var correct1 = accountRow.verify();
-        if( correct1 ){
+        if(correct0_1){
             topWarnEls.eq(0).hide();
         }else{
             topWarnEls.eq(0).show();
             topWarnEls.eq(1).hide();
             topWarnEls.eq(2).hide();
+            topWarnEls.eq(3).hide();
+            topWarnEls.eq(4).hide();
         }
-        var correct2 = passwordRow.verify();
-        if(correct1){
-            if( correct2 ){
+
+        var correct0_2 = name2Row.verify();
+        if(correct0_1){
+            if(correct0_2){
                 topWarnEls.eq(1).hide();
             }else{
                 topWarnEls.eq(1).show();
                 topWarnEls.eq(2).hide();
+                topWarnEls.eq(3).hide();
+                topWarnEls.eq(4).hide();
             }
         }
-        var correct3 = repeatRow.isEqual( passwordRow.getValue() );
-        if( correct1 && correct2){
-            if( correct3 ){
+
+
+
+        var correct1 = accountRow.verify();
+        if(correct0_1 && correct0_2){
+            if( correct1 ){
                 topWarnEls.eq(2).hide();
             }else{
                 topWarnEls.eq(2).show();
+                topWarnEls.eq(3).hide();
+                topWarnEls.eq(4).hide();
+            }
+        }
+
+        var correct2 = passwordRow.verify();
+        if(correct0_1 && correct0_2 && correct1 ){
+            if( correct2 ){
+                topWarnEls.eq(3).hide();
+            }else{
+                topWarnEls.eq(3).show();
+                topWarnEls.eq(4).hide();
+            }
+        }
+        var correct3 = repeatRow.isEqual( passwordRow.getValue() );
+        if( correct0_1 && correct0_2 && correct1 && correct2){
+            if( correct3 ){
+                topWarnEls.eq(4).hide();
+            }else{
+                topWarnEls.eq(4).show();
             }
         }
         var correct4 = true; ;
@@ -124,16 +150,16 @@ var EBE_Register = function(patternAccount,patternPassword){
         }else{
             protocolTextEls.removeClass("warn");
         }
-        return correct0_1 && correct0_2 && correct2 && correct2 && correct3 && correct4;
+        return correct0_1 && correct0_2 && correct1 && correct2 && correct3 && correct4;
     });
 };
 
 $(function(){
     new EBE_Background();
-    new EBE_Register( /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,
+    new EBE_Register( /^\w+([-+.']\w+)*@.+$/,
         /^[a-zA-Z0-9!@#$%^&*]{6,16}$/i );
 
-    
+
     $(".leftGroup .navBar a:eq(1)").click(function(){
         var url = window.location;
         var title = document.title;
