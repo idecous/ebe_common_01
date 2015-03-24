@@ -153,7 +153,7 @@ var EBE_Register = function(patternAccount,patternPassword){
         return correct0_1 && correct0_2 && correct1 && correct2 && correct3 && correct4;
     });
 };
-
+iangle2wsx
 $(function(){
     new EBE_Background();
     new EBE_Register( /^\w+([-+.']\w+)*@.+$/,
