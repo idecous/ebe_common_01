@@ -272,7 +272,7 @@ var EBE_MobileFilter = function(){
     });
 };
 
-var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label02){
+var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label02,ignorePrice){
     this.submitHandler = submitHandler;
     this.errorHandler = errorHandler;
     this.unit = unit;
@@ -280,6 +280,8 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
     this.bgUrl = bgUrl;
     this.label01 = label01;
     this.label02 = label02;
+    this.ignorePrice = ignorePrice;
+    this.canShopping = true;
 };
 (function(){
     this.init = function(){
@@ -327,6 +329,10 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         this.cnNameEl = el.find("h2");
         this.unitEl = el.find(".price>h1>i,.price>span>i");
         this.realPriceEl = el.find(".price>h1>b");
+
+        if( this.ignorePrice[this.realPriceEl.text()] ){
+            this.el.find(".shoppingcar").hide();
+        }
         this.otherPriceEl = el.find(".price>span>b");
         this.init();
     };
@@ -365,11 +371,15 @@ var EBE_ListItem = function(submitHandler,errorHandler,unit,bgUrl,label01,label0
         $("<h1 class='enFontFamily'><b>"+
         data.realPrice + "</b></h1><span>"+this.label02+"<b>"+
         data.otherPrice + "</b></span>").appendTo( priceBlockEl );
+
+        if( this.ignorePrice[ data.realPrice ] ){
+            tEl02.hide();
+        }
         this.init();
     };
 }).call(EBE_ListItem.prototype);
 
-var EBE_List = function(submitHandler,errorHandler,unit,bgUrl,label01,label02){
+var EBE_List = function(submitHandler,errorHandler,unit,bgUrl,label01,label02,ignorePrice){
     this.submitHandler = submitHandler;
     this.errorHandler = errorHandler;
     this.unit = unit;
@@ -379,6 +389,7 @@ var EBE_List = function(submitHandler,errorHandler,unit,bgUrl,label01,label02){
     this.bgUrl = bgUrl;
     this.label01 = label01;
     this.label02 = label02;
+    this.ignorePrice = ignorePrice;
     this.init();
 };
 (function(){
@@ -392,7 +403,7 @@ var EBE_List = function(submitHandler,errorHandler,unit,bgUrl,label01,label02){
     this.appendData = function(data,page){
         var i,item;
         for( i=0; i < data.length ;i++){
-            item = new EBE_ListItem(this.submitHandler ,this.errorHandler,this.unit,this.bgUrl,this.label01,this.label02);
+            item = new EBE_ListItem(this.submitHandler ,this.errorHandler,this.unit,this.bgUrl,this.label01,this.label02,this.ignorePrice);
             item.buildWithData( data[i] );
             this.el.append( item.el );
         }
@@ -445,7 +456,7 @@ $(function(){
                 sizesID:["S_0_"+countID,"S_1_"+countID,"S_2_"+countID],
                 enName:"eve by eve`s" + countID,
                 cnName:"绿野仙踪组连体泳--------------------衣" + countID,
-                realPrice:"1500.00",
+                realPrice:"call_for_pricing",
                 otherPrice:"1500.00"
             });
             countID++;
@@ -467,12 +478,12 @@ $(function(){
             imgUrl:"public/source/show/shoppingcar_001.jpg",
             name:"xxxxxx",
             size:"尺码:L",
-            price:"￥ 2,121",
+            price:"call_for_pricing",
             num:"数量:1"
         });
     },function(){
         alert("请选择尺寸");
-    },"RMB","public/img/show/holder_280_409.png","加入购物车","市场价：");
+    },"RMB","public/img/show/holder_280_409.png","加入购物车","市场价：",{"call_for_pricing":true,"coming_soon":true});
 
 
     list.setLoadPageHandler(function(page){
