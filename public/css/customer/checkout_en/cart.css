@@ -1,0 +1,527 @@
+.common_mainPanel .subTitleBar{
+    font-size: 16px;
+    border-bottom: 1px solid #666;
+    padding: 20px 0 10px 0;
+}
+
+.common_mainPanel table .hide{
+    display: none;
+}
+.common_mainPanel table{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-collapse:collapse;
+}
+.common_mainPanel table thead tr{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+.common_mainPanel table thead tr th{
+    font-size: 12px;
+    font-weight: normal;
+}
+.common_mainPanel table tbody td{
+    text-align: center;
+    padding: 20px 2px 10px 2px;
+    line-height: 26px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.common_mainPanel table tbody td img{
+    float:left;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+.common_mainPanel table tbody td .descriptBlock{
+    margin-left: 90px;
+    text-align: left;
+    min-height: 100px;
+}
+.common_mainPanel table tbody td .descriptBlock h3{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.common_mainPanel table tbody td .descriptBlock div{
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+}
+.common_mainPanel .quantitySelector{
+    width: 84px;
+    height: 24px;
+}
+.common_mainPanel .quantitySelector a{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height:22px;
+    text-align:center;
+    border: 1px solid #ddd;
+}
+.common_mainPanel table tbody td .quantitySelector input,
+.common_mainPanel .mobileBlock .quantitySelector input{
+    width: 28px;
+    height: 22px;
+    border: 1px solid #ddd;
+    text-align:center;
+    vertical-align: -1px;
+    margin: 0 3px;
+}
+.common_mainPanel table tbody td .toWish{
+    display:inline-block;
+    border: 1px solid #333;
+    width: 127px;
+    height: 28px;
+    line-height:28px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 10px;
+}
+.common_mainPanel table tbody td .toWish:hover{
+    color: #fff;
+    background-color: #333;
+}
+.common_mainPanel table tbody td .delBtn{
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../../../img/customer/icons.png") no-repeat -24px -180px;
+
+}
+.common_mainPanel .updateRow{
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #f1f1f1;
+    line-height: 65px;
+    padding: 0 20px;
+    text-align: right;
+}
+.common_mainPanel .updateRow .reward{
+    text-align: left;
+    margin: 0 10px;
+    border-bottom: 1px dotted #ddd;
+    color: #666;
+}
+.common_mainPanel .updateRow span{
+    margin-right: 20px;
+}
+
+.common_mainPanel .updateRow .codeGroup{
+    float: left;
+}
+.common_mainPanel .updateRow .codeGroup span{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.common_mainPanel .updateRow .codeGroup input[type='text']{
+    width: 192px;
+    height: 24px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    padding: 2px 4px;
+}
+.common_mainPanel .updateRow .codeGroup input[type='text'].warn{
+    border: 1px solid #f00;
+}
+.common_mainPanel .updateRow .codeGroup input[type='submit']{
+    width: 100px;
+    height: 29px;
+    line-height:29px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: -1px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.common_mainPanel .updateRow .codeGroup input[type='submit']:hover{
+    background-color: #444;
+}
+.common_mainPanel .updateRow .updateBtn{
+    width: 127px;
+    height: 30px;
+    line-height:30px;
+    background-color: #f1f1f1;
+    border: 1px solid #333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: -1px;
+    cursor: pointer;
+}
+.common_mainPanel .updateRow .updateBtn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.common_mainPanel .updateRow .reward{
+
+}
+
+
+
+
+.common_mainPanel .shippingTaxBlock{
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.common_mainPanel .shippingTaxBlock .titleBar{
+    height: 38px;
+    line-height:38px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    padding: 0 15px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li{
+    width: 33.33%;
+    float: left;
+    position: relative;
+    padding-top: 15px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li .label{
+    position: absolute;
+    top:22px;
+    left: 0;
+    width: 120px;
+    text-align: right;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li .label i{
+    color: #df4141;
+    font-style: normal;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li .inputSelect{
+    margin: 0 10px 0 125px;
+    border:1px solid #ddd;
+    height: 28px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li .inputBorder{
+    margin: 0 10px 0 125px;
+    border:1px solid #ddd;
+    height: 20px;
+    padding: 4px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li select{
+    display: block;
+    border: none;
+    width: 100%;
+    padding:4px 4px 5px 4px;
+    font-size: 12px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li select option{
+    padding: 0 4px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li input{
+    width: 100%;
+    border: none;
+    font-size: 12px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow ul li .warn{
+    margin-left: 125px;
+    font-size: 12px;
+    color: #f00;
+    visibility: hidden;
+}
+.common_mainPanel .shippingTaxBlock .addressRow .submitRow{
+    clear: both;
+    text-align: right;
+    line-height: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+.common_mainPanel .shippingTaxBlock .addressRow .submitRow input{
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    width: 128px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.common_mainPanel .shippingTaxBlock .addressRow .submitRow input:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+.common_mainPanel .shippingTaxBlock .shippingRow{
+    border-top: 1px dotted #ddd;
+    padding: 15px 0;
+    margin: 10px 10px 0 10px;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow h4{
+    font-size: 12px;
+    font-weight: bold;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow .selectBlock{
+    position: relative;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow ul{
+    margin: 30px 200px 0 50px;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow ul li{
+    display: inline-block;
+    width: 200px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow ul li input{
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow ul li span{
+    cursor: default;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow .submitBlock{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    text-align: right;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow .submitBlock input{
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    width: 128px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.common_mainPanel .shippingTaxBlock .shippingRow .submitBlock input:hover{
+    background-color: #333;
+    color: #fff;
+}
+.common_mainPanel .amountBlock{
+    line-height: 50px;
+}
+.common_mainPanel .amountBlock span{
+    margin-right: 20px;
+}
+.common_mainPanel .amountBlock b{
+    font-size: 16px;
+}
+.common_mainPanel .actionBlock{
+    text-align: right;
+}
+.common_mainPanel .actionBlock a{
+    display:inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #df4141;
+}
+.common_mainPanel .actionBlock a:hover{
+    background-color: #f25656;
+}
+.common_mainPanel .actionBlock a:first-child{
+    margin-right: 20px;
+    background-color: #333;
+}
+.common_mainPanel .actionBlock a:first-child:hover{
+    background-color: #444;
+}
+.common_mainPanel .mobileBlock{
+    display: none;
+    font-size: 12px;
+}
+.common_mainPanel .mobileBlock li{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.common_mainPanel .mobileBlock li .imgCol{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+}
+.common_mainPanel .mobileBlock li .imgCol .toWish{
+    font-size: 10px;
+    border: 1px solid #333;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+}
+.common_mainPanel .mobileBlock li .imgCol .toWish:hover{
+    background-color: #333;
+    color: #fff;
+}
+.common_mainPanel .mobileBlock li .paramCol{
+    margin: 0 50px 0 130px;
+    min-height: 130px;
+    padding-bottom: 10px;
+}
+.common_mainPanel .mobileBlock li .paramCol h3{
+    font-size: 14px;
+    padding-top:10px;
+}
+.common_mainPanel .mobileBlock li .paramCol .quantitySelector{
+    margin-bottom: 10px;
+}
+
+.common_mainPanel .mobileBlock li .operationCol{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 140px;
+    line-height:140px;
+    text-align: center;
+}
+.common_mainPanel .mobileBlock li .operationCol .delBtn{
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../../../img/customer/icons.png") no-repeat -24px -180px;
+}
+.bottomSpace{
+    height: 50px;
+}
+
+@media only screen and (max-width: 785px) {
+    header .top_logoBlockHolder{
+        display: block;
+    }
+    .common_mainPanel .subTitleBar,
+    .common_mainPanel table{
+        display: none;
+    }
+    .common_mainPanel .mobileBlock{
+        display: block;
+    }
+    .common_mainPanel .updateRow {
+        height: auto;
+        padding: 0 10px 20px 10px;
+        line-height: 30px;
+    }
+    .common_mainPanel .updateRow .codeGroup span{
+        font-size: 14px;
+    }
+    .common_mainPanel .updateRow .codeGroup{
+        float: none;
+        text-align: left;
+    }
+    .common_mainPanel .updateRow .codeGroup input[type="text"] {
+        width: 100%;
+        padding: 2px 0;
+        margin-right: 0;
+    }
+    .common_mainPanel .updateRow .codeGroup input[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .common_mainPanel .updateRow .updateBtn,
+    .common_mainPanel .reward input[type=submit] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .common_mainPanel .shippingTaxBlock {
+        border: none;
+        margin-top: 10px;
+    }
+    .common_mainPanel .shippingTaxBlock .titleBar{
+        text-align: center;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li{
+        width: auto;
+        float: none;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow .submitRow{
+        padding: 0 10px;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow .submitRow input{
+        width: 100%;
+    }
+    .common_mainPanel .shippingTaxBlock .shippingRow ul {
+        margin: 30px 10px 0 10px;
+    }
+    .common_mainPanel .shippingTaxBlock .shippingRow ul li {
+        width: auto;
+        display: block;
+    }
+    .common_mainPanel .shippingTaxBlock .shippingRow .submitBlock{
+        position: static;
+        text-align: center;
+        width: auto;
+        margin-top: 20px;
+    }
+    .common_mainPanel .shippingTaxBlock .shippingRow .submitBlock input{
+        width: 100%;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li{
+        padding: 15px 10px 0 10px;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li .label {
+        position: static;
+        width: auto;
+        text-align: left;
+        font-size: 14px;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li .inputSelect,
+    .common_mainPanel .shippingTaxBlock .addressRow ul li .inputBorder {
+        margin: 6px 0 ;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li select {
+        font-size: 14px;
+        padding: 3px 4px;
+    }
+    .common_mainPanel .shippingTaxBlock .addressRow ul li input{
+        font-size: 14px;
+    }
+
+    .common_mainPanel .amountBlock {
+        padding: 0 10px;
+        line-height: 30px;
+    }
+    .common_mainPanel .amountBlock span{
+        display: block;
+    }
+    .common_mainPanel .actionBlock{
+        text-align: left;
+        padding: 0 10px;
+    }
+    .common_mainPanel .actionBlock a{
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .common_mainPanel .actionBlock a:first-child{
+        margin-right: 0;
+    }
+
+    .common_topNavigationBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+
+}

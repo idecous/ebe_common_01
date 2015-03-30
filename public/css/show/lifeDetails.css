@@ -939,12 +939,21 @@
     }
     .common_mainPanel .recommendPanel .mightLikeGroup{
         width: auto;
+        float: none;
     }
+    .common_mainPanel .recommendPanel .mightLikeGroup .titleBar{
+        text-align: center;
+    }
+
     .common_mainPanel .recommendPanel .recentViewGroup{
-        display: none;
+        float: none;
+        width: auto;
+        text-align: center;
+
     }
-
-
+    .common_mainPanel .recommendPanel .recentViewGroup .listGroup{
+        margin-left: 0;
+    }
 
 
 

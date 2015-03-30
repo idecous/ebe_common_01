@@ -636,8 +636,11 @@ input,button,select,textarea{
     width: 48px;
     margin-left: 7px;
 }
-
-.comm_top_userGroup .shoppingcar>div>i{
+.comm_top_userGroup .shoppingcar>a{
+    display: block;
+    color: #fff;
+}
+.comm_top_userGroup .shoppingcar>a>i{
     display: inline-block;
     width: 	22px;
     height: 14px;

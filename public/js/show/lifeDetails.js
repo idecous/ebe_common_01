@@ -546,6 +546,7 @@ var EBE_RecommendGroup = function( el ,maxShowCount,resizeFn){
         if(resizeFn){
             resizeFn( liWidth );
         }
+
     }
     function init(){
         isInit = true;
@@ -568,7 +569,13 @@ var EBE_RecommendGroup = function( el ,maxShowCount,resizeFn){
     }
     function updateWidth( liWidth){
         ulEl.stop();
-        listGroupEl.css("marginLeft", el.width() - liWidth - 45 +10  );
+        if( listGroupEl.parent().css("textAlign") == "center" ){
+            listGroupEl.css( {"marginRight": el.width() - liWidth - 45 +10,
+            "marginLeft":0});
+        }else{
+            listGroupEl.css({"marginLeft": el.width() - liWidth - 45 +10 ,
+        "marginRight":0});
+        }
         resizeHandler();
     }
     return { "updateWidth":updateWidth };
@@ -734,5 +741,5 @@ $(function(){
     },function(size,sizeID){
         console.log("添加到收藏(尺寸/尺寸ID)",size,sizeID);
 
-    },"加入购物袋");
+    },"加入购物袋1");
 });

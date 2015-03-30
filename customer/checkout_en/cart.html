@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>Car</title>
+    <link rel="stylesheet" type="text/css" href="../../public/css/customer/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/customer/checkout_en/cart.css"/>
+    <script type="text/javascript" src="../../public/js/jquery.js"></script>
+    <script type="text/javascript" src="../../public/js/customer/default.js"></script>
+    <script type="text/javascript" src="../../public/js/customer/checkout_en/cart.js"></script>
+</head>
+<body>
+    <!--<div class="common_mobileNav">-->
+        <!--<ul>-->
+            <!--<li><a href="#">首页</a></li>-->
+            <!--<li><a href="#">品味生活</a></li>-->
+            <!--<li><a href="#">时尚搭配</a></li>-->
+            <!--<li class="liftRow"><a href="javascript:;">生活元素</a><a class="children" href="javascript:;"></a>-->
+                <!--<ul class="categoryBlock">-->
+                    <!--<li><a href="#">女装</a><i></i></li>-->
+                    <!--<li><a href="#">男装</a><i></i></li>-->
+                    <!--<li><a href="#">内衣</a><i></i></li>-->
+                    <!--<li><a href="#">配饰</a><i></i></li>-->
+                    <!--<li><a href="#">腕表首饰</a><i></i></li>-->
+                    <!--<li><a href="#">护肤美容</a><i></i></li>-->
+                    <!--<li><a href="#">家居生活</a><i></i></li>-->
+                    <!--<li><a href="#">藝術</a><i></i></li>-->
+                    <!--<li><a href="#">Discover</a><i></i></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">发现</a></li>-->
+            <!--<li><a href="#">我的EBE</a></li>-->
+            <!--<li><a href="#">关于EBE</a></li>-->
+            <!--<li><a href="#">客服电话：400-888-8888</a></li>-->
+            <!--<li><a href="#">在线客服</a></li>-->
+            <!--<li><a href="#">隐私声明</a></li>-->
+            <!--<li><a href="#">联系我们</a></li>-->
+            <!--<li class="account"><a href="#">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">注册</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <a class="common_mobile_toTop" href="javascript:;"></a>
+<div class="common_normalContent">
+        <div class="header">
+            <div class="top_logoBlockHolder"></div>
+            <div class="common_topNavigationBlock fixed">
+                <div class="common_mobile_topMenuBtn">
+                    <!--<a class="open" href="javascript:;"></a>
+                    <a class="close" href="javascript:;"></a> -->
+                    <a class="return" href="#"></a>
+                </div>
+                <img src="../../public/img/customer/logo_top.png" />
+                <h1>Shopping Cart</h1>
+                <a class="comm_mobile_searchBtn" href="javascript:;"></a>
+                <div class="comm_mobile_searchBlock">
+                    <form>
+                        <div class="border"><input type="text"/><i></i></div>
+                        <a href="javascript:;">取消</a>
+                    </form>
+                </div>
+            </div>
+
+            <ul class="comm_top_userGroup">
+                <li class="account"><a href="">login</a><span>&nbsp;|&nbsp;</span><a href="#">sign in</a></li><li class="search">
+                <i></i>
+                <div class="popWin">
+                    <div class="borderTop"></div>
+                    <div class="borderContent">
+                        <a class="close" href="javascript:;"></a>
+                        <div class="label">搜索</div>
+                        <form>
+                            <div class="inputBlock">
+                                <div class="info"><i></i><span>请输入关键字</span></div>
+                                <input type="text"/>
+                            </div><input type="submit" value="搜索" />
+                        </form>
+                    </div>
+                </div>
+                </li><li class="shoppingcar">
+                    <div><i></i>(<span>0</span>)</div>
+                    <div class="popWin">
+                        <div class="borderTop"></div>
+                        <div class="borderContent">
+                            <div class="topInfoPanel"><span>购物车内共<b>0</b>件商品</span><a href="javascript:;"></a></div>
+                            <div class="empty">购物车是空的</div>
+                            <div class="listContainer">
+                                <ul>
+                                    <li iid="sc_1">
+                                        <div class="imgBlock">
+                                            <img src="../../public/source/show/shoppingcar_001.jpg" />
+                                        </div>
+                                        <div class="infoBlock">
+                                            <div>kate spade 凯特·丝蓓女士kate spade 凯特·丝蓓女士</div>
+                                            <div>尺码 : M</div>
+                                            <div class="price">￥3688</div>
+                                            <div>数量 : 1</div>
+                                            <a href="javascript:;">删除</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="statsRow">
+                                <span>商品小计</span><b>￥ </b><b>0</b>
+                            </div>
+                            <a class="toPay" href="#">结算</a>
+                        </div>
+                        <div class="borderBottom"></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="common_mainNavBar">
+                <li><a href="javascript:;">首页</a></li><li><a href="#">品味生活</a></li><li><a href="#">风尚搭配</a></li><li><a class="checked" href="#">时尚元素</a></li><li><a href="#">发现</a></li><li><a href="#">艺术家</a></li>
+            </ul>
+            <ul class="common_categoryNavBar">
+                <li><div class="btnBlock"><a href="#"><span>女装</span></a><i></i></div>
+                    <div class="subPopBlock">
+                        <div class="displayBlock">
+                            <ul class="categoryBlock">
+                                <li>
+                                    <div class="border">
+                                        <a href="#">上衣上衣上衣上衣</a>
+                                        <a href="#">上衣 · Tops</a>
+                                        <a href="#">上衣 · Tops</a>
+                                        <a href="#">上衣 · Tops</a>
+                                    </div>
+                                </li><li>
+                                <div class="border">
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                </div>
+                            </li><li>
+                                <div class="border">
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                </div>
+                            </li>
+                            </ul><ul class="brandBlock">
+                            <li>
+                                <a href="#"><img src="../../public/source/show/brand_001.jpg"></a>
+                            </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_002.jpg"></a>
+                        </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_001.jpg"></a>
+                        </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_002.jpg"></a>
+                        </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li><li><div class="btnBlock"><a href="#"><span>男装</span></a><i></i></div>
+                    <div class="subPopBlock">
+                        <div class="displayBlock">
+                            <ul class="categoryBlock">
+                                <li>
+                                    <div class="border">
+                                        <a href="#">上衣 · Tops</a>
+                                        <a href="#">上衣 · Tops</a>
+                                        <a href="#">上衣 · Tops</a>
+                                        <a href="#">上衣 · Tops</a>
+                                    </div>
+                                </li><li>
+                                <div class="border">
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                    <a href="#">上衣 · Tops</a>
+                                </div>
+                            </li>
+                            </ul><ul class="brandBlock">
+                            <li>
+                                <a href="#"><img src="../../public/source/show/brand_001.jpg"></a>
+                            </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_002.jpg"></a>
+                        </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_001.jpg"></a>
+                        </li><li>
+                            <a href="#"><img src="../../public/source/show/brand_002.jpg"></a>
+                        </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>童装</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>内衣</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>配饰</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>腕表首饰</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>护肤美容</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>家居生活</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>藝術</span></a><i></i></div>
+                </li><li>
+                    <div class="btnBlock"><a href="#"><span>Discover</span></a><i></i></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="common_mainPanel">
+            <div class="common_centerBlock">
+                <div class="subTitleBar">Shopping Cart</div>
+                <div class="common_messageBlock">
+                    <ul class="messages">
+                        <li class="error-msg">
+                            <ul>
+                                <li><span>Invalid login or password.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <form action="#" method="post">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>ITEMS</th>
+                            <th width="100">QTY</th>
+                            <th>PRICE</th>
+                            <th></th>
+                            <th width="60">SUBTOTAL</th>
+                            <th>REMOVE</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <img src="../../public/source/customer/checkout/001.jpg" />
+                                <div class="descriptBlock">
+                                    <h3>ABBY DEEP V TOP</h3>
+                                    <div>Color BLACK</div>
+                                    <div>Size S</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="quantitySelector"><a class="reduce" href="javascript:;">-</a><input type="text" maxlength="2" name="cart[qty]" value="1"><a class="increase" href="javascript:;">+</a></div>
+                            </td>
+                            <td><span>$1,333.00</span></td>
+                            <td><a class="toWish" href="#toWish">ADD TO WISHLIST</a></td>
+                            <td><span>$1,333.00</span></td>
+                            <td><a class="delBtn" href="#del"></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../public/source/customer/checkout/001.jpg" />
+                                <div class="descriptBlock">
+                                    <h3>ABBY DEEP V TOP2</h3>
+                                    <div>Color BLACK</div>
+                                    <div>Size S</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="quantitySelector"><a class="reduce" href="javascript:;">-</a><input type="text" name="cart[qty]" value="1"><a class="increase" href="javascript:;">+</a></div>
+                            </td>
+                            <td><span>$1,333.00</span></td>
+                            <td><a class="toWish" href="#toWish">ADD TO WISHLIST</a></td>
+                            <td><span>$1,333.00</span></td>
+                            <td><a class="delBtn" href="#del"></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+                <ul class="mobileBlock">
+                    <li>
+                        <div class="imgCol">
+                            <img src="../../public/source/customer/checkout/001.jpg" />
+                            <a class="toWish" href="#toWish">ADD TO WISHLIST</a>
+                        </div>
+                        <div class="paramCol">
+                            <h3>ABBY DEEP V TOP</h3>
+                            <div>Color BLACK</div>
+                            <div>Size S</div>
+                            <div class="quantitySelector"><a class="reduce" href="javascript:;">-</a><input type="text" maxlength="2" value="1"><a class="increase" href="javascript:;">+</a></div>
+                            <div>Price<span>$1,333.00</span></div>
+                            <div>Sub Total<span>$1,333.00</span></div>
+                        </div>
+                        <div class="operationCol">
+                            <a class="delBtn" href="#del"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgCol">
+                            <img src="../../public/source/customer/checkout/001.jpg" />
+                            <a class="toWish" href="#toWish">ADD TO WISHLIST</a>
+                        </div>
+                        <div class="paramCol">
+                            <h3>ABBY DEEP V TOP</h3>
+                            <div>Color BLACK</div>
+                            <div>Size S</div>
+                            <div class="quantitySelector"><a class="reduce" href="javascript:;">-</a><input type="text" maxlength="2" value="1"><a class="increase" href="javascript:;">+</a></div>
+                            <div>Price<span>$1,333.00</span></div>
+                            <div>Sub Total<span>$1,333.00</span></div>
+                        </div>
+                        <div class="operationCol">
+                            <a class="delBtn" href="#del"></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="updateRow">
+                    <div class="reward">
+                        <span>You are currently using 125 point(s) of your 125 loyalty point(s) available.</span>
+                        <input class="updateBtn" type="submit" value="Remove Points"/>
+                    </div>
+                    <form action="#code">
+                        <input type="hidden" />
+                        <div class="codeGroup"><span>Discount Code</span><input type="text"/><input type="submit" name="apply_code" value="APPLY CODE"/><input type="submit" name="cancel" value="CANCEL"/></div>
+                    </form>
+                    <input class="updateBtn" type="submit" name="update_car" value="UPDATE BAG"/>
+                </div>
+
+
+                <div class="shippingTaxBlock">
+                    <div class="titleBar">Estimate Shipping And Tax</div>
+                    <form action="#">
+                        <div class="addressRow">
+                            <ul>
+                                <li>
+                                    <div class="label">Country<i>*</i></div>
+                                    <div class="inputSelect">
+                                        <select>
+                                            <option selected="selected" value="US">United States</option>
+                                        </select>
+                                    </div>
+                                    <div class="warn">Do not empty!</div>
+                                </li>
+                                <li>
+                                    <div class="label">State/Province<i>*</i></div>
+                                    <div class="inputSelect">
+                                        <select>
+                                            <option value="">Please select</option>
+                                            <option value="1" title="Alabama">Alabama</option>
+                                            <option value="2" title="Alaska">Alaska</option>
+                                        </select>
+                                    </div>
+                                    <div class="warn">Do not empty!</div>
+                                </li>
+                                <li>
+                                    <div class="label">ZIP/POSTAL CODE<i>*</i></div>
+                                    <div class="inputBorder">
+                                        <input type="text"/>
+                                    </div>
+                                    <div class="warn">Do not empty!</div>
+                                </li>
+                            </ul>
+                            <div class="submitRow">
+                                <input type="submit" value="GET A QUOTE"/>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="shippingRow">
+                            <h4>Select Shipping Method</h4>
+                            <div class="selectBlock">
+                                <ul>
+                                    <li><input name="group01" type="radio" checked="checked"/><span>FedEx Ground $7.00</span></li>
+                                    <li><input name="group01" type="radio"/><span>FedEx 2-Day $20.00</span></li>
+                                    <li><input name="group01" type="radio"/><span>FedEx Next Day $26.00</span></li>
+                                </ul>
+                                <div class="submitBlock">
+                                    <input type="submit" value="UPDATE TOTAL"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="amountBlock">
+                    <span>Subtotal  $1,603.00</span>
+                    <span>Flat Rate - Fixed  $1,603.00</span>
+                    <b>Grand Total $1,603.00</b>
+                </div>
+                <div class="actionBlock">
+                    <a href="#">CONTINUE SHOPPING</a><a href="#">PROCEED TO CHECKOUT</a>
+                </div>
+                <div class="bottomSpace"></div>
+
+
+            </div>
+        </div>
+
+        <div class="footer" >
+            <div class="common_footerCenterBlock servicesPanel">
+                <ul class="feature">
+                    <li><i class="icon01"></i><div>网上支付</div></li>
+                    <li><i class="icon02"></i><div>满999免运费</div></li>
+                    <li><i class="icon03"></i><div>7天免费退换</div></li>
+                    <li><i class="icon04"></i><div>实体验货</div></li>
+                    <li><i class="icon05"></i><div>会员服务</div></li>
+                </ul>
+                <ul class="help">
+                    <li><h3><a href="#">购物指南</a></h3><div><a href="#">购物流程</a></div><div><a href="#">配送方式</a></div></li>
+                    <li><h3><a href="#">支付方式</a></h3><div><a href="#">如何支付</a></div><div><a href="#">发票制度</a></div></li>
+                    <li><h3><a href="#">商品说明</a></h3><div><a href="#">商品尺款</a></div><div><a href="#">商品包装</a></div></li>
+                    <li><h3><a href="#">客服中心</a></h3><div><a href="#">七天退换</a></div><div><a href="#">常见问题</a></div></li>
+                </ul>
+                <ul class="contact">
+                    <li>
+                        <div class="other"><span>在线客服</span><a class="tx" href="#"></a><a class="online" href="#"></a></div>
+                        <h1 class="tel">400-888-8888</h1>
+                    </li>
+                </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="common_footerCenterBlock bottomNav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于EBE</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                    <li><a href="#">品质保质</a></li>
+                    <li><a href="#">买手团队</a></li>
+                    <li><a href="#">业务合作</a></li>
+                    <li><a href="#">隐私声明</a></li>
+                    <li><a href="#">加入平台</a></li>
+                    <li><a href="#">网站地图</a></li>
+                </ul>
+                <div class="copyright">&#169; 2014 Evebyeve's. All Rights Reserved.</div>
+            </div>
+
+            <ul class="mobilFooter" >
+                <li class="miniNav"><a href="#">首页 </a><a href="#">时尚元素</a><a href="#">关于EBE</a><i class="sp1"></i><i class="sp2"></i></li>
+                <li class="account"><a href="#">注册 </a><a href="#">登录</a><i class="sp"></i></li>
+                <li class="service">
+                    服务热线 &nbsp;&nbsp;&nbsp;&nbsp;400-888-8888
+                </li>
+                <li class="copyright">&#169; 2014 Evebyeve's. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
