@@ -123,7 +123,7 @@ var EVE_ShoppingCar = function(deleteHandler,label01){
     });
     var sideInfoPointEl = $(".mobileSide .toShoppingcarPage i");
 
-    var count01El = el.find(">div>span");
+    var count01El = el.find(">a>span");
     var count02El = el.find(".popWin .topInfoPanel>span>b");
     var emptyInfoEl =  el.find(".popWin .borderContent .empty");
 
