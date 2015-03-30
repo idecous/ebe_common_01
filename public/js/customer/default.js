@@ -220,6 +220,7 @@ var EVE_ShoppingCar = function(deleteHandler,label01){
             items.push( item );
         }
         update();
+        popWinEl.addClass("open");
     }
     update();
     return {"addGoods":addGoods};

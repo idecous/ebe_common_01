@@ -8,7 +8,11 @@
 .comm_top_userGroup .search i{
     background: url("../../img/customer/top_user_search_btn.png") no-repeat center center;
 }
-.comm_top_userGroup .shoppingcar > div > i{
+.comm_top_userGroup .shoppingcar > a{
+    display: block;
+    color: #333;
+}
+.comm_top_userGroup .shoppingcar > a > i{
     background: url("../../img/customer/shoppingcar_icon01.png") no-repeat;
 }
 
