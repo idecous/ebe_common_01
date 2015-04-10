@@ -121,7 +121,37 @@
     border-bottom: 2px solid #fff;
     cursor: default;
 }
-
+.mobileSide{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: none;
+    z-index: 500;
+}
+.mobileSide a{
+    position:relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/show/shoppingcar_side.png);
+}
+.mobileSide .toShoppingcarPage{
+    background-position:  0 0;
+}
+.mobileSide .toShoppingcarPage i{
+    display:block;
+    width:12px;
+    height:12px;
+    position: absolute;
+    top:6px;
+    right:6px;
+    background: url(../../img/show/shoppingcar_side_redPoint.png);
+    display: none;
+}
+.mobileSide .scrollTop{
+    background-position:  -40px 0;
+    margin-top: 10px;
+}
 .common_mainNavBarBorder{
     position: relative;
     background-color: #333;
@@ -924,7 +954,8 @@
     .common_mainPanel .detailPanel .rightBlock .paramPanel .QtyRow .list{
         margin: 0 0 0 10px;
     }
-    .common_mainPanel .mobile_paramMessage{
+    .common_mainPanel .mobile_paramMessage,
+    .mobileSide{
         display: block;
     }
     .mobileAppendBtn{
