@@ -197,7 +197,11 @@ var EVE_ShoppingCar = function(deleteHandler,label01){
         }
         var lStr = aArr[1];
         if( lStr.length == 1){ lStr+="0"}
-
+        for(i=pArr.length-1; i >= 0;--i ){
+            if ($.trim(pArr[i]) == ""  ){
+                pArr.splice(i,1);
+            }
+        }
         totalPriceEl.text( $.trim( pArr.join(",") +"." + lStr ) );
 
         sideInfoPointEl.show();
